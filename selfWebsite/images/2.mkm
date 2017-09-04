@@ -1,0 +1,9 @@
+<MKM version="2.0" imageFileUrl="file:///C:/Users/VIN/Desktop/%e4%b8%aa%e4%ba%ba/images/2.jpg">
+  <Marks>
+    <LengthMark direction="12" color="16711680" length="601" x="-1" y="76"/>
+    <LengthMark direction="3" color="16711680" length="301" x="248" y="-1"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="10865585" offsetX="25" offsetY="10" x="285" y="30"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="16773386" offsetX="25" offsetY="10" x="123" y="109"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="15847999" offsetX="25" offsetY="10" x="260" y="127"/>
+  </Marks>
+</MKM>

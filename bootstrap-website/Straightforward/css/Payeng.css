@@ -1,0 +1,41 @@
+
+
+body{font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;}
+.container,container-fluid,row,.row{overflow: hidden; font-family:"Montserrat", "Helvetica", "Arial", "sans-serif";}
+.p-bgo{background: rgba(0,0,0,0.2); padding:1em; border:none; }
+.navbar-default .navbar-nav>li>a{color: white;}
+.phone-bg{background:url(../img/ipone-bg.png)no-repeat; background-size: 100% 100%;border-radius: 1.5em; padding: 1.8em; overflow: hidden; border:none;}
+.screen{ position: relative;   top: 9.025723%;bottom: 8.854341%;left: 6.15995%;right: 6.15995%;}
+body{overflow-x: hidden;}
+.icon-s{font-size: 24px;}
+.p-header{position: relative; background:url(../img/bg-cta.jpg)no-repeat; background-position: center;overflow: hidden;}
+.p-bagagin{width: 100%;height:100%;position: absolute;top:0;left:0;z-index1; background-color:rgba(0,0,0,0.5);}
+.payeng-bg2{padding:250px 80px; overflow: hidden; position: relative; z-index:2; color:#fff;}
+.P-top button{background: transparent; border-radius:5em; padding:15px 45px; margin-top:25px;}
+.P-top button a{text-decoration:none; color:#fff;}
+.p-paddingt{padding-top:7em;background:#1F8A70 url(../img/bg-pattern.png); background-position:center;}
+.p-color{color:white;}
+.p-fons{font-size:3.2em;}
+.p-fonw{font-weight:normal;}
+.p-btn{background-color: transparent;padding:0.7em; border-radius:5em; width:13em;}
+.p-btn>a{color:white;}
+.p-btn>a:hover{text-decoration:none;}
+.p-pad2{padding:100px 0 150px; background:linear-gradient(135deg,#f1f1f1,#e8e8e8); color:#333;}
+.p-fons2{font-size:70px;}
+.p-color2{color:#666;}
+.p-pad3{padding:100px 20px;}
+.icon-s{font-size:4em;}
+.p-pad3 .lead{color:#999; }
+.features{padding:100px 0;}
+.features h1{font-size:50px;}
+.hr{max-width: 100px; margin:25px auto 100px;}
+.p-text{color:#5cb85c;}
+.p-iconfs{font-size:80px; color:#145747;}
+.features button{border-radius:200px;}
+.p-padt{padding:150px 0; background:linear-gradient(#F8F8F8,#E7E7E7);}
+.p-fons3 a{font-size:30px;color:#333;}
+.p-pad4{padding:100px 0; background: -webkit-linear-gradient(#F8F8F8, #E7E7E7); background: -o-linear-gradient(#F8F8F8, #E7E7E7); background: linear-gradient(#F8F8F8, #E7E7E7);}
+footer{background:#222; padding:25px 10px;}
+footer,footer a{color:rgba(255,255,255,0.3); line-height: 38px;}
+footer a:hover{color:rgba(255,255,255,0.3);}
+.p-btn1{ border-radius:100px; background:transparent; color:#fff; margin-left:.6em;}

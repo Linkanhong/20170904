@@ -1,0 +1,133 @@
+@maincolor:#a0a0a0;
+@skyblue:#09bbef;
+@grey:#f3f3f3;
+
+/*CSS 初始化  */
+body,div,p,span,a,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,input,textarea,img{padding:0; margin:0; border:0; list-style:none;}
+input{outline:none;}
+body{font-size:12px; font-family:"微软雅黑"; color:@maincolor;}
+a{ color:@maincolor; text-decoration: none;}
+a:hover{ color:@skyblue;}
+/* 公用的属性 */
+.fl{ float: left;}
+.fr{ float: right;}
+.oh{ overflow: hidden;}
+
+
+/* nav */
+.nav{
+	height: 80px;
+	background:url(../images/1_02.jpg) repeat-X 0 0 ;
+	.nav_in{
+		width: 1040px;
+		height: 80px;
+		margin: 0 auto;
+		.logo{
+			.fl;
+			a{ line-height: 80px;}
+		}
+
+		
+	}
+}
+.ul01{
+	.fl;
+	width: 540px;
+	margin-top:27px;
+	margin-left: 50px;
+
+	li{
+		.fl;
+		a{
+			color:#3a3a3b;
+			font-size: 16px;
+		}
+		a:hover{
+			color:@skyblue;
+		}
+	}
+}
+.ul02{
+	.fr;
+	width: 100px;
+	margin-top: 27px;
+	background:url(../images/2_19.jpg) no-repeat 0 center;
+	padding-left: 22px;
+	li{
+		.fl;
+	}
+}
+
+/* con01 */
+.con01{
+	height:680px;
+	background:url(../images/3_03_03.jpg) repeat-X 0 0;
+	position: relative;
+	.oh;
+	.img01{
+		width: 801px;
+		height: 368px;
+		position: absolute;
+		top: 0;
+		right:0;
+		bottom: 0;
+		left: 0;
+		margin:auto;
+		cursor: pointer;
+	}
+}
+
+.con02{
+	width: 980px;
+	height: 600px;
+	margin: 0 auto;
+	margin-bottom:44px;
+	.oh;
+	.mx2{
+		.fl;
+		width: 657px;
+		height: 600px;
+		img{
+			display: block;
+			margin-bottom:10px;
+		}
+	}
+	.zy{
+		width: 294px;
+		height: 600px;
+		.fr;
+		img{
+			display: block;
+			margin-bottom:10px;
+		}
+	}
+}
+
+/* footer */
+.footer{
+	ul{
+		width: 400px;
+		height: 40px;
+		margin: 0 auto;
+		overflow: hidden;
+		li{
+			.fl;
+			a{ 
+				color:#626065;
+				&:hover{
+					color:@skyblue;
+				}
+			}
+		}
+	}
+	p{
+		height: 45px;
+		text-align: center;
+		color:#626065;
+		img{
+			margin-left:25px;
+			cursor: pointer;
+		}
+	}
+
+}

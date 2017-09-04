@@ -1,0 +1,159 @@
+/*CSS 初始化  */
+body,
+div,
+p,
+span,
+a,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+input,
+textarea,
+img {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+}
+input {
+  outline: none;
+}
+body {
+  font-size: 12px;
+  font-family: "微软雅黑";
+  color: #a0a0a0;
+}
+a {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+a:hover {
+  color: #09bbef;
+}
+/* 公用的属性 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.oh {
+  overflow: hidden;
+}
+/* nav */
+.nav {
+  height: 80px;
+  background: url(../images/1_02.jpg) repeat-X 0 0;
+}
+.nav .nav_in {
+  width: 1040px;
+  height: 80px;
+  margin: 0 auto;
+}
+.nav .nav_in .logo {
+  float: left;
+}
+.nav .nav_in .logo a {
+  line-height: 80px;
+}
+.ul01 {
+  float: left;
+  width: 540px;
+  margin-top: 27px;
+  margin-left: 50px;
+}
+.ul01 li {
+  float: left;
+}
+.ul01 li a {
+  color: #3a3a3b;
+  font-size: 16px;
+}
+.ul01 li a:hover {
+  color: #09bbef;
+}
+.ul02 {
+  float: right;
+  width: 100px;
+  margin-top: 27px;
+  background: url(../images/2_19.jpg) no-repeat 0 center;
+  padding-left: 22px;
+}
+.ul02 li {
+  float: left;
+}
+/* con01 */
+.con01 {
+  height: 680px;
+  background: url(../images/3_03_03.jpg) repeat-X 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.con01 .img01 {
+  width: 801px;
+  height: 368px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  cursor: pointer;
+}
+.con02 {
+  width: 980px;
+  height: 600px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  overflow: hidden;
+}
+.con02 .mx2 {
+  float: left;
+  width: 657px;
+  height: 600px;
+}
+.con02 .mx2 img {
+  display: block;
+  margin-bottom: 10px;
+}
+.con02 .zy {
+  width: 294px;
+  height: 600px;
+  float: right;
+}
+.con02 .zy img {
+  display: block;
+  margin-bottom: 10px;
+}
+/* footer */
+.footer ul {
+  width: 400px;
+  height: 40px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.footer ul li {
+  float: left;
+}
+.footer ul li a {
+  color: #626065;
+}
+.footer ul li a:hover {
+  color: #09bbef;
+}
+.footer p {
+  height: 45px;
+  text-align: center;
+  color: #626065;
+}
+.footer p img {
+  margin-left: 25px;
+  cursor: pointer;
+}

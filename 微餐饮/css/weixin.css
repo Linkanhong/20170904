@@ -1,0 +1,80 @@
+
+body,dl,dd,h1,h2,h3,h4,h5,h6,p,span{margin:0;padding:0px;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+img{border: none;padding: 0;margin:0;display:block; width:100%;}
+em,i,b{font-style:normal}
+ul,ol{list-style:none;margin:0;padding:0;}
+a{text-decoration:none; color:#000;}
+a:hover{text-decoration:none}
+table{border-collapse:collapse;border-spacing:0}
+input,select,option{outline:none}
+body{background: #fff;width:100%; font-size:0.7rem;}
+
+
+
+/**************************************常用的属性**************************************/
+.fl{float:left;}
+.fr{float:right;}
+.oh{overflow:hidden;}
+.w100{width:100%;}
+.fw{font-weight:700;}
+.tac{text-align:center;}
+.db{display:block;}
+.c80{color:#acacac;}
+.bt{border-top: 0.05rem solid #f9fafe;}
+
+
+/**************************************weixin_index**************************************/
+header{position: fixed; width: 100%; height: 1.5rem;
+	z-index: 30;
+	background:#fbd01f;
+	text-align: center;
+	font-weight: 700;
+	// font-weight: bold;
+	line-height:1.8rem;
+	color:#0000;
+	overflow: hidden;
+}
+header p{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	margin: 0;
+	color:#000;
+}
+header a{
+	position: relative;
+	z-index: 2;
+	color:#000;
+	float: left;
+}
+header .a_left{
+	width:0.8rem;
+	height:0.8rem;
+	margin: 0.5rem 0 0 1rem;
+}
+header .a_left img{
+	display: block;
+	width:0.8rem;
+	height:0.8rem;
+}
+header .a_right{
+	float:right;
+	margin-right:0.5rem;
+	cursor: pointer;
+}
+
+
+.index_main{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	overflow: scroll;
+}
+
+
+
+
+
+body{width: 100%; height: 80rem; background: lime;}

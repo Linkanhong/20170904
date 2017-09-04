@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script>
+
+
+
+window.onload=function(){
+	var box=document.getElementById('box')
+	var names=['刘备','关羽','张飞','赵云','诸葛亮','马超','黄忠','马良','马谡','曹操','荀彧','司马懿','许褚','徐晃','张辽','孙权','周瑜','黄盖','吕布','貂蝉','大乔','小乔',]
+	var radNum=parseInt(Math.random()*names.length)
+	box.innerHTML=names[radNum]
+	
+	
+	
+}
+</script>
+</head>
+<body>
+<h1 id="box">随机点将</h1>
+</body>
+</html>

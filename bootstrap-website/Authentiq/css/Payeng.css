@@ -1,0 +1,53 @@
+body{padding-top: 60px;overflow-x: hidden;}
+.with-logo{background: url(../img/authentiq-logo-a-inverse.svg)no-repeat 15px center; padding-left: 67px; background-size: 44px 40px;}
+.p-navbar{ background:#f26641; font-size: 17px;}
+.p-navbar .navbar-nav>li>a,.p-navbar .navbar-header>a{color:#fff;}
+.p-navpad{ padding: .5em 3em;}
+.p-navrig{border-left: 1px solid #d95c3b;}
+.p-navrig span{padding-right: .3em;}
+.p-navbar .p-navrig>li>a{color:#000;}
+.p-navbar .p-navrig>li>a:hover{color:#fff;}
+.navbar-header>button span{color:#fff;font-size:1.4em;}
+.navbar-default .navbar-toggle{border-color: #d95c3b;}
+nav .navbar-toggle{padding:.3em .6em;}
+.navbar-default .navbar-collapse{border-color: #d95c3b;}
+.navbar-default{border:1px solid #d95c3b;}
+
+header{padding: 150px 0 75px 0;color:#fff; background:#f26641;}
+header .h1{font-size: 4em;}
+header .p-small{font-size:.1em; color:#d95c3b;background:#000;border:none; padding:.3em;border-radius: 0;margin-top: -3em;}
+header .h1+p{font-size:1.8em;}
+.p-btn1{padding:.5em;font-size:1.8em;background:transparent;border: 2px solid #fff;color:#fff;margin: 1em 0;}
+
+section{padding:70px 0 100px;overflow: hidden;}
+section .title h2{font-size:3em;color:#895FC0;position: relative;margin-bottom: .5em;padding-bottom: .5em;}
+section .title h2:before{content:""; width:2.5em;border-bottom: 2px solid #895FC0; position: absolute;bottom:-.2em; left:0;}
+section .title p{padding-bottom:1em;}
+section .content{line-height: 1.5em;}
+section .content>div{margin-bottom: 1em;}
+section .content .btn-primary{padding:.8em .6em; background:#895fc0; font-size:1em; border-radius:6px;border:none;}
+section .content p,section .content ul{padding-bottom: 3em;}
+section .content .col-md-5 span{margin-right: .5em; color:#d95c3b;}
+section .content .col-md-5{line-height:2.5em;font-size:1em;}
+.authentiq{padding: 0;}
+.p-margin .h4{margin-top: 0;}
+.p-margin .row>button{padding:10px 20px;background:#F26641;font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:1.2em;border-radius:0;}
+.p-margin .img img{width:13em;}
+footer{background:#895fc0;}
+footer .foot-menu a{font-size:1.2em; color:#fff;}
+footer .foot-menu a span{font-size:3em;padding-bottom: .2em;color:#644192;}
+footer .foot-menu>div{padding:2em 0;}
+footer .container-fluid{border-top: 1px solid #644192; padding:1em 1em .5em; color:#fff;font-size:1.1em;line-height:1.2em;}
+footer .container-fluid button{background:transparent;border: 1px solid #999;}
+
+
+
+
+
+
+
+
+
+@media screen and ( max-width: 992px) {
+	header .col-md-4{text-align: center;}
+}
