@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <meta name="keywords" content="店装帮">
+  <meta name="description" content="店装帮，让店装更便捷" />
+  <title>任务发布成功</title>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="style.css">    
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/Payeng.css">
+
+</head>
+<body>
+  <header class="t-header">     
+    <div class="container-fluid p-nopadding t-top p-container">
+        <span><a href="index.html"><img src="img/logo.png" alt="店装帮"></a><em>让店装更便捷</em></span>
+        <ul class="list-inline pull-right p-nopadding t-ul">
+            <li id="index_head"><a href="login.html">登录</a><a href="register.html">免费注册</a></li>
+            <li class="p-paddingLeft8" id="showsysout"></li>
+        </ul>            
+    </div>   
+  </header><!--end headr -->
+
+  <nav class="navbar navbar-default t-nomargin t-navbar">
+    <div class="container-fluid p-container p-nopadding ">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse p-nopadding" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav t-width100">
+          <li class="dropdown t-background t-li">
+            <a href="#" class="dropdown-toggle t-fontcolor6 c-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/nav-icon.png" alt="" class="t-por3 c-navicon">全部导航<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">首页<span class="icon-navshouye pull-right p-iconBefore"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="seller-list.html">找需求<span class="icon-navchuangkezhongxin pull-right p-iconBefore"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="stuff.html">找材料<span class="icon-navzhaocailiao pull-right p-iconBefore"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="maker.html">创客中心<span class="icon-navchuangkezhongxin pull-right p-iconBefore"></span></a></li>
+            </ul>
+          </li>
+          <li class="p-active"><a href="index.html">首页</a></li>
+          <li><a href="seller-list.html">找需求<img src="img/hothover.png" alt="" class="t-paddingLeft c-img"></a></li>
+          <li><a href="stuff.html">找材料</a></li>
+          <li><a href="maker.html">创客中心认证</a></li>
+          <li class="pull-right"></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav><!--end nav -->  
+
+
+<div class="container-fluid col-md-8 col-md-offset-2 text-center">
+	<ul class="col-xs-12 p-nowrap p-fons1">
+		<li class="col-xs-2 p-overFlow"><span class="glyphicon glyphicon-list-alt p-fontcolor2"></span><br> 填写任务信息</li>
+		<li class="col-xs-2 p-overFlow"><span class="glyphicon glyphicon-search p-fontcolor2"></span><br> 任务审核、验证</li>
+		<li class="col-xs-2 p-overFlow p-nocolor"><span class="glyphicon glyphicon-user p-fontcolor2"></span><br> 匹配供应方</li>
+		<li class="col-xs-2 p-overFlow"><span class="glyphicon glyphicon-cog"></span><br> 供应方工作</li>
+		<li class="col-xs-2 p-overFlow"><span class="glyphicon glyphicon-ok"></span><br> 验收并付款</li>
+		<li class="col-xs-2 p-overFlow"><span class="glyphicon glyphicon-th-large"></span><br> 售后</li>
+		<li class="col-xs-10 col-xs-offset-1 p-hr5"></li>
+	</ul>
+	<div class="clearfix"></div>
+</div><!-- /menu -->
+<div class="clearfix"></div>
+<hr class="p-border1 col-md-8 col-md-offset-2 p-marb p-nop">
+
+<div class="container-fluid col-md-8 col-md-offset-2 p-marb1 text-center">
+	<button class="btn-default col-xs-4 col-xs-offset-4 p-border4 p-fontcolor5 p-btnwidth" type="submit" disabled> <span class="glyphicon glyphicon-ok p-fontcolor2"></span> &nbsp;发布成功</button>
+	<div class="clearfix"></div>
+	<ul class="list-inline p-li2" id="order_data">
+
+	</ul>
+</div>
+<div class="clearfix"></div><!-- /end -->
+
+<div class="container-fluid col-xs-offset-2 col-xs-8 p-paddingLeft1">
+	<h3 class="pull-left p-nowrap"><span class="glyphicon glyphicon-triangle-bottom p-fontcolor2"></span>正在为您匹配供应方,<span class="h5 p-fontcolor2">您也可以主动邀请</span></h3>
+	<h5 class="pull-right p-position4 p-paddingRight">您每天可免费邀请名额：<span class="p-fontcolor2">3位</span></h5>
+</div>
+<div class="clearfix"></div>
+<hr class="p-border9 col-md-8 col-md-offset-2 p-nop">
+<!-- /list -->
+
+<div class="container-fluid col-md-8 col-md-offset-2 p-marb2">
+	<h5 class="pull-right p-paddingRight"><span class="p-fontcolor2 p-dot p-position4"></span>已邀请供应方</h5>
+	<div class="clearfix p-marb"></div>
+	
+	<!-- 供应方列表开始 -->
+	<ul class="col-xs-12 p-margin4 list-inline p-for" id="sysServerList">
+	
+	</ul>
+	<!-- 供应方列表结束 -->
+	<!--  
+	<a href="javascript:toallChoose();" class="pull-right p-fontsize p-marginr2">全部待选供应方</a>
+	-->
+</div>
+<div class="clearfix"></div><!-- /end -->
+
+<div class="container-fluid footer" id="footer1">
+</div><!-- /footer -->
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Payeng.js"></script>
+<script>
+
+$.getJSON("/DZBang_entrance/happuser/getloginUser.do", function(data){
+	  if("" != data.name && null != data.name){
+		  $("#index_head").html('<a href="user-information.html" class="p-borderColor">'+data.nickname+'</a><a href="user-notice.html"><span class="p-fontcolor20">消息</span></a>');
+	      $("#showsysout").html("<a onclick='sysloginout();' >退出</ a>");
+	  }else{
+    	  window.wxc.xcConfirm("你未登录，请先登录",window.wxc.xcConfirm.typeEnum.error,
+  	            {onClose: function(){
+  	              window.location.href= "login.html?flag="+Math.random();
+  	            }},
+  	            {onOk: function(){
+  	              window.location.href= "login.html?flag="+Math.random();
+  	            }});
+	  }
+});
+
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+
+$(function() {
+	
+	$.ajax({
+		url: '/DZBang_entrance/orderinfo/getuserinfoOrderbyorderno.do',
+		type: 'post',
+		data: {order_no:GetQueryString("orderno")},
+		dataType: 'json',
+		cache: false,
+		'success': function(data){
+			var str = '';
+			str += '<li><span class="glyphicon glyphicon-list-alt"></span>'+data.begin_date_str+'</li>';
+			str += '<li><span class="glyphicon glyphicon-map-marker"></span>'+data.area+data.city+'</li>';
+			str += '<li><span>任务单号: </span>'+data.order_no+'</li>';
+			
+			$("#order_data").html(str);
+			
+		},
+		'error':function(data){
+			window.wxc.xcConfirm("你好，订单查询失败",window.wxc.xcConfirm.typeEnum.error);
+		},
+
+	});
+	
+	//系统自动匹配供应商
+	$.ajax({
+		url : '/DZBang_entrance/orderinfo/getSysServerList.do',
+		type : 'post',
+		data : {order_no:GetQueryString("orderno")},
+		dataType : 'json',
+		cache : false,
+		'success' : function(data) {
+			var str = "";
+			$.each(data, function(i, item) {
+				if(i < 3){
+					str = str + '<li class="p-position2 p-ovh p-nowrap">';
+					str = str + '	<input type="hidden" id='+i+' name='+i+' value="'+item.id+'" />';
+					str = str + '	<span class="p-span">';
+					str = str + item.name
+					str = str + '	<button class="btn pull-right p3-btn" data-toggle="modal" data-target="#myModal" onclick="toSMS('+"'"+item.user_id+"'"+');" >邀请他</button>';
+					str = str + '	</span>';
+					str = str + '</li>';
+				}
+				
+			});
+			
+			if(str == "" ){
+				str = "很抱歉，没有匹配到合适地域或能力的服务方";
+			}
+			
+			
+			$("#sysServerList").html(str);
+
+			// 邀请按钮点击切换状态
+			$(function (){
+			  $('.p3-btn').click(function(event) {
+			      if ($(this).html()=='邀请他') {
+			        $(this).css({background:'#fafafa',color:'#fdaf17'});
+			        $(this).html("已邀请");
+			      	// $(this).attr('onclick');
+			      }else if ($(this).html()=='已邀请') {
+			      	// $(this).removeAttr('onclick');
+			        $(this).css({background: '#fdaf17',color:'#fff'});
+			        $(this).html("邀请他");
+			      };
+			  });
+
+			});			
+		},
+		'error' : function(data) {
+			window.wxc.xcConfirm("查询失败",
+					window.wxc.xcConfirm.typeEnum.error);
+		}
+
+	});
+});
+
+function toallChoose(){
+	window.location.href= "supplier-orderspair.html?orderno="+GetQueryString("orderno")+"&flag="+Math.random();
+}
+
+function toSMS(userid){
+	$.ajax({
+	      url: '/DZBang_entrance/notice/saveNotice.do',
+	      type: 'post',
+	        dataType: 'json',
+	        data : {order_no:GetQueryString("orderno"),to_userid:userid},
+	      cache: false,
+	      'success': function(data){
+	        // alert("注销成功");
+	        
+	        if(data.result == 'success'){
+		        window.wxc.xcConfirm("邀请成功",window.wxc.xcConfirm.typeEnum.success,
+		            {onClose: function(){
+		            	
+		            }},
+		            {onOk: function(){
+		            	
+		            }});
+	        	
+	        }else{
+	        	window.wxc.xcConfirm("邀请失败",window.wxc.xcConfirm.typeEnum.error);
+	        }
+	        
+	        
+	      },
+	      'error':function(data){
+	        window.wxc.xcConfirm("邀请失败",window.wxc.xcConfirm.typeEnum.error);
+	      }
+	    });
+}
+</script>
+<script>
+
+function sysloginout(){
+	  window.wxc.xcConfirm("请确认是否注销？",window.wxc.xcConfirm.typeEnum.confirm,
+	            {onOk: function(){
+	            	$.ajax({
+	          	      url: '/DZBang_entrance/syslogout.do',
+	          	      type: 'post',
+	          	        dataType: 'json',
+	          	      cache: false,
+	          	      'success': function(data){
+			            	window.wxc.xcConfirm("注销成功",window.wxc.xcConfirm.typeEnum.success,
+			                        {onClose: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }},
+			                        {onOk: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }}); 
+	          	      },
+	          	      'error':function(data){
+	          	        window.wxc.xcConfirm("注销失败",window.wxc.xcConfirm.typeEnum.error);
+	          	      }
+	          	    });
+	            	
+	            }});
+	};
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <meta name="keywords" content="店装帮">
+  <meta name="description" content="店装帮，让店装更便捷" />
+  <title>材料库</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css">     -->
+  <link rel="stylesheet" type="text/css" href="style.css">    
+  <link type="text/css" rel="stylesheet" href="css/page.css" />
+  <link rel="stylesheet" type="text/css" href="css/Payeng2.css">    
+  <script type="text/javascript" src="js/jquery1.10.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>  
+  <style>
+  	.p-hr{width: 1200px;}
+  </style>  
+</head>
+
+<body>
+  <header class="p-header">     
+    <div class="container-fluid p-nopadding p-top p-container">
+        <span><a href="index.html"><img src="img/logo.png" alt="店装帮"></a><em>让店装更便捷</em></span>
+        <ul class="list-inline pull-right p-nopadding p-ul">
+            <li id="index_head"><a href="login.html">登录</a><a href="register.html">免费注册</a></li>
+            <li class="p-paddingLeft8" id="showsysout"></li>
+        </ul>            
+    </div>   
+  </header><!--end headr -->
+
+  <nav class="navbar navbar-default p-nomargin p-navbar ">
+    <div class="container-fluid p-container p-nopadding">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse p-nopadding" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav p-width100">
+          <li class="dropdown p-background p-li">
+            <a href="#" class="dropdown-toggle p-fontcolor6 c-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/nav-icon.png" alt="" class="p-por3 c-navicon">全部导航<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">首页<span class="icon-navshouye pull-right p-iconBefore"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="seller-list.html">找需求<span class="icon-navchuangkezhongxin pull-right"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="stuff.html">找材料<span class="icon-navzhaocailiao pull-right"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="maker.html">创客中心<span class="icon-navchuangkezhongxin pull-right"></span></a></li>
+            </ul>
+          </li>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="seller-list.html">找需求<img src="img/hothover.png" alt="" class="p-paddingLeft c-img"></a></li>
+          <li class="p-active"><a href="stuff.html">找材料</a></li>
+          <li><a href="maker.html">创客中心认证</a></li>
+          <li class="pull-right"><a href="supplier-task2.html" class="btn btn-primary p-btn">发需求</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav><!--end nav -->  
+  
+
+  <div class="p-container5 p-margin7">
+  	<div class="p-width1200">
+		<div class="p-img text-center p-fontcolor1 p-fontstyle3 p-height2">猜<br>你<br>想<br>要<br>的<br></div>
+		<div class="carousel-example p-por">	
+			<!-- 优质材料 -->
+			<ul class="p-width999 p-ul15" id="betterStuff">
+				
+				
+			</ul>
+			<!-- 优质材料 end-->
+			<a class="carousel-control" href="#simple-content-carousel" role="button" data-slide="prev">
+				<span class="p-Previous p-height" aria-hidden="true"></span>
+			</a>
+			<a class="carousel-control p-right" href="#simple-content-carousel" role="button" data-slide="next">
+				<span class="p-Next p-height" aria-hidden="true"></span>
+			</a>
+		</div>
+	</div>				
+  </div>
+
+  <div class="p-container p-margin6 p-por">
+  	<img src="img/activity.jpg" alt="" class="img-responsive" width="1214px">
+  	<span class="p-poa1"></span>
+  </div>
+
+
+	  <div class="p-container clearfix p-background1 p-boxshow2">	
+	  <input type="hidden" id="chooseCode" value="" >
+	  <!--材料分类 -->
+		<ul class="list-inline p-nomargin p-fontcolor p-ul2 p-ul5 p-border1" id="stufftypelist">
+			
+		</ul>
+		<ul class="list-inline p-nomargin p-fontcolor p-ul2 p-ul4 p-border2 p-por">
+			<li class="p-poaLi">筛选条件：</li>
+			<li class="p-poaLi1"><span class="c-close">不限</span></li>
+			<!--材料明细 -->
+			<li class="p-checkbox p-minHeight" id="stuffdetaillist">
+			</li>
+		</ul>
+	  </div><!--end p-nav -->
+	<hr class="p-hr" />
+  
+
+  <div class="p-container3 clearfix">	
+  	<!--材料列表 -->
+	<ul class="container-fluid col-md-12 p-margingBottom list-inline p-nopadding p-ul3 p-ul6" id="stufflist" >
+		
+    </ul>
+  </div><!--end p-container -->
+
+<nav class="text-center p-marginBottom3">
+	<ul class="pagination" id="pager" >
+	</ul>
+</nav>    
+
+
+
+  <div class="container-fluid footer" id="footer1">
+  </div><!-- /footer -->
+
+
+</body>
+<script type="text/javascript" src="js/Payeng2.js"></script>
+<script type="text/javascript" src="js/js-extend.js"></script>
+<script type="text/javascript" src="js/jquery-ajax-pager.js"></script>
+
+<script>
+	$.getJSON("/DZBang_entrance/happuser/getloginUser.do", function(data){
+		  if("" != data.name && null != data.name){
+			$("#index_head").html('<a href="user-information.html" class="p-borderColor">'+data.nickname+'</a><a href="user-notice.html"><span class="p-fontcolor20">消息</span></a>');
+			$("#showsysout").html("<a onclick='sysloginout();' >退出</ a>");
+		  }else{
+
+		  }
+	});
+
+  	
+ 	$(function() {
+		var defaultCode = "";
+	
+		//循环生成优质材料
+		$.ajax({
+			url : '/DZBang_entrance/stuff/queryStuffBetter.do',
+			type : 'post',
+			dataType : 'json',
+			cache : false,
+			'success' : function(data) {
+				var str = "";
+				$.each(data, function(i, item) {
+					str = str + '<li>';
+					str = str + '	<a href="#" class="p-tdn">';
+					str = str + '		<img src="img/stuff/' + item.type + '1.png" height="156" width="190" />';
+					str = str + '		<p class="p-fontsize p-fontcolor5 p-margin8 p-margin13">¥' + item.price + '元<span class="pull-right p-fontcolor4">' + item.volume + '人成交</span></p>';
+					str = str + '		<p class="p-margin25 p-fontcolor">';
+					str = str + '		<span class="p-fontsize">' + item.stuff_name + '</span>';
+					str = str + '		<span class="p-border8 pull-right p-por11 p-fontsize" >客服</span>';
+					str = str + '		</p>';
+					str = str + '	</a>';
+					str = str + '</li>';
+				});
+				$("#betterStuff").html(str);
+				lunbo();
+			},
+			'error' : function(data) {
+				window.wxc.xcConfirm("查询失败",
+						window.wxc.xcConfirm.typeEnum.error);
+			}
+	
+		});
+	}); 
+  	
+	$(function() {
+		var defaultCode = "";
+
+		//循环生成材料类型
+		$.ajax({
+			url : '/DZBang_entrance/dict/dictStuffTypeList.do',
+			type : 'post',
+			dataType : 'json',
+			cache : false,
+			'success' : function(data) {
+				var str = "<li class='p-firstLi'>材料类型</li>";
+				$.each(data, function(i, item) {
+					if(i == 0){//默认被选中
+						str = str + '<li class="p-fontcoloractive" onclick="queryStuff(' + "'" + item.code + "'" + ');"><a href="javascript:queryStuff(' + "'" + item.code + "'" + ');">' + item.name + '</a></li>';
+						$("#chooseCode").val("'" + item.code + "'");
+						defaultCode = item.code ;
+					}else{
+						str = str + '<li onclick="queryStuff(' + "'" + item.code + "'" + ');" ><a href="javascript:queryStuff(' + "'" + item.code + "'" + ');">' + item.name + '</a></li>';
+					}
+				});
+	
+				$("#stufftypelist").html(str);
+				
+				ajaxPager(defaultCode,1);
+				stuffDetail(defaultCode);//默认材料
+	
+			},
+			'error' : function(data) {
+				window.wxc.xcConfirm("查询失败",
+						window.wxc.xcConfirm.typeEnum.error);
+			}
+	
+		});
+	});
+	//分页显示材料
+	function ajaxPager(codes,level){
+		$('#pager').sjAjaxPager({
+            url: '/DZBang_entrance/stuff/queryStuffByType.do',
+            pageSize: 16,
+            searchParam: {
+                /*
+                * 如果有其他的查询条件，直接在这里传入即可
+                */
+            	codes:codes,level:level
+            },
+            beforeSend: function () {
+            },
+            success: function (data) {
+                /*
+                *返回的数据根据自己需要处理
+                */
+                var str = "";
+                $.each(data.items, function(i,item) {
+                    
+                	str = str + '<li class="col-md-3 col-sm-6 p-pddingBottom">';
+					str = str + '	<div class="img p-background1 p-boxshow">';
+					str = str + '		<a href="javascript:;" class="p-hover p-por p-overflow">';
+					str = str + '			<img src="img/stuff/' + item.type + '1.png" width="100%" />';
+					str = str + '			<span class="p-mask p-fontcolor4"><p class="small">' + item.price + '元</p></span>';
+					str = str + '		</a>';
+					str = str + '		<p class="p-borderBottom3 p-padding05 p-padding066 p-textnowarp p-margin4"><span class="p-fontcolor5 p-fontsize3">¥</span><span class="p-fontcolorblue p-marginTop4">' + item.price + '</span><span class="p-fontstyle2">' + item.volume + '人成交</span></p>';
+					str = str + '		<p class="p-por12 p-margin33">';
+					str = str + '			<span class="p-fontsize">' + item.stuff_name + '</span>';
+					str = str + '			<span class="p-border8 pull-right p-por11 p-fontsize">客服</span>';
+					str = str + '		</p>';
+					str = str + '	</div>';
+					str = str + '</li>';
+                    
+                });
+
+                $('#stufflist').html(str);
+
+            },
+            complete: function () {
+            }
+        });
+	}
+
+	  //材料明细分类
+	  function stuffDetail(detailCode){
+		  var detailType = detailCode;
+		  if(detailType == '' || detailType == null ){
+			  return false;
+		  }
+		  
+		  $.ajax({
+				url : '/DZBang_entrance/dict/dictDetailList.do',
+				type : 'post',
+				data: {type:detailType},
+				dataType : 'json',
+				cache : false,
+				'success' : function(data) {
+					var str = "";
+					$.each(data, function(i, item) {
+						str = str + '<label class="checkbox-inline">';
+						str = str + '  <input type="checkbox" onclick="checkboxList();" id="" name="checkbox" value="'+ item.code +'">' + item.name ;
+						str = str + '</label>';
+					});
+		
+					$("#stuffdetaillist").html(str);
+		
+				},
+				'error' : function(data) {
+					window.wxc.xcConfirm("查询失败",
+							window.wxc.xcConfirm.typeEnum.error);
+				}
+		
+			});
+		  
+		  queryStuffList(detailType,1);//执行查询全部材料明细的分类的材料
+		  
+	  }
+  
+	  //查询材料分类归属的材料明细分类
+	  function queryStuff(code){
+		  $("#chooseCode").val(code);
+		  
+		  stuffDetail(code);
+		  
+		  queryStuffList(code,1);//执行查询全部材料明细的分类的材料
+		  
+		  $(".c-close").css({
+				background: '#0085d0',
+				color: '#fff'
+			});
+	  }
+
+	//材料类型高亮
+	$(document).on(
+			"click",
+			".p-ul5>li:not(.p-firstLi)",
+			function() {
+				$(this).addClass('p-fontcoloractive').siblings(':not(.p-firstLi)').removeClass('p-fontcoloractive');
+			});
+	
+  	//鼠标移入材料图片显示文案
+	  $(document).on(
+				"mouseover mouseout",
+				".p-hover",
+				function(event) {
+					 if(event.type == "mouseover"){
+					  	//鼠标悬浮
+						 $(this).children('span').stop().animate({bottom: 0});
+					 }else if(event.type == "mouseout"){
+					  	//鼠标离开
+						 $(this).children('span').stop().animate({bottom: '-177px'});
+					 }
+				});
+
+	//点击工单明细不限高亮，取消选中
+	$(document).on(
+			"click",
+			".c-close",
+			function() {
+				$(".p-checkbox").children().children('input').attr('checked', false);
+				$(this).css({
+					background: '#0085d0',
+					color: '#fff'
+				});
+				
+				queryStuffList($("#chooseCode").val(),1);//执行查询全部材料明细的分类的材料
+				
+			});
+	
+	//点击工单明细 取消不限高亮
+	$(document).on(
+			"click",
+			".checkbox-inline",
+			function() {
+				$(".c-close").css({
+				    background: '#fff',
+				    color: '#000'
+				 });
+				/* 失效
+				var checked_array = [];
+	    		$('input[type=checkbox]:checked').each(function(i,o){
+	        		checked_array.push(o.value);
+	    		});
+				*/
+	});
+	
+	//点击材料明细复选框
+	function checkboxList(){
+		var checked_array = [];
+	    $('input[type=checkbox]:checked').each(function(i,o){
+	        checked_array.push(o.value);
+	    });
+	    if(checked_array.length == 0){
+	    	var code = $("#chooseCode").val();
+	    	checked_array.push(code);
+	    	queryStuffList(checked_array,1);//执行查询勾选的材料明细的分类的材料
+	    	
+	    	//没有勾选任何的时候 不限高亮（失效了）
+	    	$(".c-close").css({
+	    		background: '#0085d0',
+				color: '#fff'
+			 });
+	    }else{
+		    queryStuffList(checked_array,2);//执行查询勾选的材料明细的分类的材料
+	    }
+	}
+
+	//遍历材料
+	function queryStuffList(codes,level){
+		sjPager.doPage(1,16,{"codes":codes+'',"level":level,"pageIndex":1,"pageSize":16})
+	}
+ 
+</script>
+
+<script>
+function sysloginout(){
+	  window.wxc.xcConfirm("请确认是否注销？",window.wxc.xcConfirm.typeEnum.confirm,
+	            {onOk: function(){
+	            	$.ajax({
+	          	      url: '/DZBang_entrance/syslogout.do',
+	          	      type: 'post',
+	          	        dataType: 'json',
+	          	      cache: false,
+	          	      'success': function(data){
+			            	window.wxc.xcConfirm("注销成功",window.wxc.xcConfirm.typeEnum.success,
+			                        {onClose: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }},
+			                        {onOk: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }}); 
+	          	      },
+	          	      'error':function(data){
+	          	        window.wxc.xcConfirm("注销失败",window.wxc.xcConfirm.typeEnum.error);
+	          	      }
+	          	    });
+	            	
+	            }});
+	}
+</script>
+<!-- 固定式轮播 -->
+<script>
+function lunbo(){
+	var num = 0;
+	var liLength = $(".p-ul15>li").length-5;
+	var timer = null;
+	//自动轮播及移入停止轮播
+	function go(){
+		timer=setInterval(function(){	
+			 num ++;
+			 if ( num>liLength ) {
+			 	num=0;
+			 	$(".p-ul15").animate({'left': '0px'},500)
+			 };		 
+			$(".p-ul15").animate({'left': (-num*220)+'px'},500);
+		},2000);
+	};
+	go();
+	$(".p-ul15,.p-Previous,.p-Next").hover(function() {
+		clearInterval(timer)
+	}, function() {
+		go();
+	});
+	$(".p-Previous").click(function(event) {
+		 num++;
+		 if ( num>liLength ) {
+		 	num=0;
+		 	$(".p-ul15").animate({'left': '0px'},500);
+		 };
+		$(".p-ul15").stop().animate({'left': (-num*220)+'px'},500);
+	});
+	$(".p-Next").click(function(event) {
+		 num--;
+		 if ( num<0 ) {
+		 	num=liLength;
+		 	$(".p-ul15").animate({'left': '0px'},500)
+		 };
+		$(".p-ul15").stop().animate({'left': (-num*220)+'px'},500);
+	});
+ };
+
+	$(document).on(
+			"click",
+			".p-border8",
+			function() {
+				window.wxc.xcConfirm("客服座机：020-31560543",window.wxc.xcConfirm.typeEnum.confirm);
+				return false;
+			});
+</script>
+</html>

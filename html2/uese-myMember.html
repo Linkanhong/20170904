@@ -1,0 +1,195 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <meta name="keywords" content="店装帮">
+  <meta name="description" content="店装帮，让店装更便捷" />
+  <title>我的会员</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="css/jquery-alert.css">   -->
+  <link rel="stylesheet" type="text/css" href="style.css">    
+  <link rel="stylesheet" type="text/css" href="css/Payeng2.css">    
+</head>
+
+<body>
+  <header class="p-header">     
+    <div class="container-fluid p-nopadding p-top p-container">
+        <span><a href="index.html"><img src="img/logo.png" alt="店装帮"></a><em>让店装更便捷</em></span>
+        <ul class="list-inline pull-right p-nopadding p-ul">
+            <li id="index_head"><a href="login.html">登录</a><a href="register.html">免费注册</a></li>
+            <li class="p-paddingLeft8" id="showsysout"></li>
+        </ul>            
+    </div>   
+  </header><!--end headr -->
+
+  <nav class="navbar navbar-default p-nomargin p-navbar">
+    <div class="container-fluid p-container p-nopadding">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse p-nopadding" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav p-width100">
+          <li class="dropdown p-background p-li">
+            <a href="#" class="dropdown-toggle p-fontcolor6 c-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/nav-icon.png" alt="" class="p-por3 c-navicon">全部导航<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">首页<span class="icon-navshouye pull-right p-iconBefore"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="seller-list.html">找需求<span class="icon-navchuangkezhongxin pull-right"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="stuff.html">找材料<span class="icon-navzhaocailiao pull-right"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="maker.html">创客中心<span class="icon-navchuangkezhongxin pull-right"></span></a></li>
+            </ul>
+          </li>
+          <li><a href="user-information.html">账户设置</a></li>
+          <li class="p-active"><a href="uese-myMember.html">会员中心</a></li>
+          <li><a href="user-notice.html">消息中心</a></li>
+          <li></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav><!--end nav -->  
+  
+  <div class="p-container clearfix p-marginTop">
+    <div class="col-sm-2 p-col-sm-2 all p-nopadding">
+      <ul>
+          <li class="current">
+                <span class="p-fontcolor"><span class="glyphicon glyphicon-play"></span>账户管理</span>
+                <ul>
+                  <li><a href="user-information.html">基本信息<img src="img/member-icon5.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="user-authentication.html">身份认证<img src="img/member-icon6.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="user-security.html">安全级别<img src="img/member-icon7.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="user-modify-password.html">修改密码<img src="img/member-icon8.png" alt="" class="p-mymember1"></a></li>
+                </ul>
+          </li>
+          <li class="current">
+                <span class="p-fontcolor"><span class="glyphicon glyphicon-play"></span>项目管理</span>
+                <ul>
+                  <li><a href="user-order.html">我的订单<img src="img/member-icon3.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="user-collection.html">我的收藏<img src="img/member-icon4.png" alt="" class="p-mymember1"></a></li>
+                </ul>
+          </li>
+          <li>
+                <span class="p-fontcolor"><span class="glyphicon glyphicon-play"></span>会员中心</span>
+                <ul>
+                  <li class="p-liactive2"><a href="uese-myMember.html">我的会员<img src="img/member-icon1.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="uese-growUp.html">成长体系<img src="img/member-icon2.png" alt="" class="p-mymember1"></a></a></li>
+                </ul>
+          </li>
+          <li class="current">
+                <span class="p-fontcolor"><span class="glyphicon glyphicon-play"></span>通知<span class="p-badge"> (1)</span></span>
+                <ul>
+                  <li><a href="user-notice.html">系统通知<img src="img/member-icon9.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="user-service.html">服务通知<img src="img/member-icon10.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="user-transaction.html">交易通知<img src="img/member-icon11.png" alt="" class="p-mymember1"></a></li>
+                </ul>
+          </li>
+        </ul>     
+    </div>
+    <!--end left -->
+    <div class="col-sm-10 p-col-sm-10">
+      <ul class="p-marginTop14">
+        <li class="h4 strong p-borderBottom p-pddingBottom6">
+          <strong class="p-por">我的会员等级：<img src="img/vip-gem.png" alt=""><small class="p-vip01">v1</small></strong>
+          <div class="p-inlineblock p-por4 p-marginLeft1"><img src="img/vip-gem2.png" alt="" class="img-responsive p-inlineblock p-paddingLeft2"><br><span class="p-paddingLeft3">v1</span><span class="pull-right p-paddingRight">v2</span></div>
+        </li>
+        <li class="h4 p-pddingBottom2 p-marginTop7"><strong class="p-pddingBottom3">什么是会员等级：</strong></li>
+        <li class="p-marginTop2">1.注册成功即为V1，V1积分为0，完善资料，身份认证均可以获取积分，发布任务或完成任务也可以获取积分，级别越高可享受到的会
+        <li class="p-marginBottom2 p-marginTop2">2.积分还可通过充值、评价、登录等获得。</li>
+        <li class="h4 p-fontcolor1 p-ovh p-borderBottom4">
+          <div class="p-background2 p-width2"><strong>已获得特权</strong><img src="img/vip-crown.png" alt="" class="p-marginTop6"></div>
+        </li>
+        <li class="p-padding4 p-ovh">
+          <ol class="col-md-12 text-center p-ol">
+            <li class="col-md-3 col-sm-6"><img src="img/vip-vip1.png" alt="" class="img-responsive"><span class="p-fontcolor5 text-center p-marginTop8">已获得</span></li>
+          </ol>
+        </li>
+        <li class="h4 p-fontcolor1 p-borderBottom4">
+          <div class="p-background2 p-width2">
+            <strong>即将获得特权</strong>
+          </div>
+        </li>
+        <li class="p-padding4 p-ovh">
+          <ol class="col-md-12 text-center p-ol">
+            <li class="col-md-3 col-sm-6"><img src="img/vip-vip2.png" alt="" class="img-responsive"><span class="p-fontstyle6">未获得</span></li>
+            <li class="col-md-3 col-sm-6"><img src="img/vip-vip3.png" alt="" class="img-responsive"><span class="p-fontstyle6">未获得</span></li>
+            <li class="col-md-3 col-sm-6"><img src="img/vip-vip4.png" alt="" class="img-responsive"><span class="p-fontstyle6">未获得</span></li>
+            <li class="col-md-3 col-sm-6"><img src="img/vip-vip5.png" alt="" class="img-responsive"><span class="p-fontstyle6">未获得</span></li>
+          </ol>
+        </li>
+      </ul>
+    </div>
+  
+
+
+  </div><!--end container -->
+
+  <div class="container-fluid footer" id="footer1">
+  </div><!-- /footer -->
+
+
+</body>
+<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>    
+<script type="text/javascript" src="js/Payeng2.js"></script>
+<script>
+  $(function(){ 
+    $('.all .p-fontcolor').click(function(e) {
+          $(this).parent().toggleClass('current').siblings().addClass('current');
+      });
+  });  
+</script>
+<script>
+  $.getJSON("/DZBang_entrance/happuser/getloginUser.do", function(data){
+      if("" != data.name && null != data.name){
+    	  $("#index_head").html('<a href="user-information.html" class="p-borderColor">'+data.nickname+'</a><a href="user-notice.html"><span class="p-fontcolor20">消息</span></a>');
+          $("#showsysout").html("<a onclick='sysloginout();' >退出</ a>");
+
+      }else{
+    	  window.wxc.xcConfirm("你未登录，请先登录",window.wxc.xcConfirm.typeEnum.error,
+  	            {onClose: function(){
+  	              window.location.href= "login.html?flag="+Math.random();
+  	            }},
+  	            {onOk: function(){
+  	              window.location.href= "login.html?flag="+Math.random();
+  	            }});
+      }
+  });
+  function sysloginout(){
+	  window.wxc.xcConfirm("请确认是否注销？",window.wxc.xcConfirm.typeEnum.confirm,
+	            {onOk: function(){
+	            	$.ajax({
+	          	      url: '/DZBang_entrance/syslogout.do',
+	          	      type: 'post',
+	          	        dataType: 'json',
+	          	      cache: false,
+	          	      'success': function(data){
+			            	window.wxc.xcConfirm("注销成功",window.wxc.xcConfirm.typeEnum.success,
+			                        {onClose: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }},
+			                        {onOk: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }}); 
+	          	      },
+	          	      'error':function(data){
+	          	        window.wxc.xcConfirm("注销失败",window.wxc.xcConfirm.typeEnum.error);
+	          	      }
+	          	    });
+	            	
+	            }});
+	}
+</script>
+
+</html>

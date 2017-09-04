@@ -1,0 +1,60 @@
+		<ul class="list-inline pull-right">
+			<li><span class="glyphicon glyphicon-user"></span><a href="user-index.html" id="userindex_name"></a></li>
+			<li><a onclick="sysloginout();" >[ 退出 ]</a></li>
+			<li><a href="user-order.html">我的项目</a></li>
+               <li><a href="user-notice.html">通知</a></li>
+			<li id="credit"></li>
+			<li id="servicer"></li>
+		</ul>
+<script>
+       
+            $.getJSON("/DZBang_entrance/happuser/getloginUser.do", function(data){
+          		  if("" != data.nickname && null != data.nickname){
+          			$("#userindex_name").html(data.nickname);
+          			$("#this_name").html(data.nickname);
+          			if(data.status == "1"){
+          				$("#servicer").css({display: 'none'});
+              			$("#credit").html("<a href='supplier-task2.html'>我是需求方</a>");
+          			}
+					if(data.status == "2"){
+						$("#servicer").html("<a href='seller-list.html'>我是供应方</a>");
+	          			$("#credit").css({display: 'none'});
+          			}
+          		  }else{
+          			window.wxc.xcConfirm("你好，你还未登录，请先登录",window.wxc.xcConfirm.typeEnum.error,
+    						{onClose: function(){
+    							window.location.href= "login.html?flag="+Math.random();
+    						}},
+    						{onOk: function(){
+    							window.location.href= "login.html?flag="+Math.random();
+    						}});
+          		  }
+          	});
+
+</script>
+<script>
+function sysloginout(){
+	  window.wxc.xcConfirm("请确认是否注销？",window.wxc.xcConfirm.typeEnum.confirm,
+	            {onOk: function(){
+	            	$.ajax({
+	          	      url: '/DZBang_entrance/syslogout.do',
+	          	      type: 'post',
+	          	        dataType: 'json',
+	          	      cache: false,
+	          	      'success': function(data){
+			            	window.wxc.xcConfirm("注销成功",window.wxc.xcConfirm.typeEnum.success,
+			                        {onClose: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }},
+			                        {onOk: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }}); 
+	          	      },
+	          	      'error':function(data){
+	          	        window.wxc.xcConfirm("注销失败",window.wxc.xcConfirm.typeEnum.error);
+	          	      }
+	          	    });
+	            	
+	            }});
+	}
+</script>

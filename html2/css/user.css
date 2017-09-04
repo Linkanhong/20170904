@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Payeng (you@example.org)
+ * @date    2017-08-04 15:16:18
+ * @version $Id$
+ */
+
+.u-padding{padding-bottom: 20px;margin-bottom: 30px;}
+.u-marginBottom{margin-bottom: 150px;}
+.u-margin{margin-top: 56px !important;margin-bottom: 170px !important;}
+.u-fontstyle{color:#171717;font-size:16px; line-height: 24px; text-indent: 2em; font-family: "微软雅黑"; text-align: justify;}
+.u-fontstyle2{color:#171717;font-size:16px; line-height: 24px;  font-family: "微软雅黑"; text-align: justify;}
+.u-lineheight{line-height: 26px; background-color: #0085d0; color:#fff;border-color:#0085d0;}
+.u-fontcolor>a{color:#0085d0 !important;}
+
+
+/*------- p- --------*/
+.p-nopadding{padding: 0 !important;}
+
+.p-col-sm-10{width: 77.6%; background:#fff; height: auto; margin-left: 1.8%; padding:50px 90px 70px;}
+.p-container{width: 1200px;margin: 0 auto; }/*使大屏幕的时候显示中间区域为1200px  background:pink !important;*/
+.p-marginTop{margin-top: 77px !important; margin-bottom: 50px !important;}
+.p-col-sm-2{width: 20.6%;border-radius:5px;overflow: hidden; }
+.all{ height:auto;  background:#fff; margin-bottom: 20px;}
+.all span{  cursor:pointer;}
+.all span:first-child{margin-right: 10px;}
+.all>ul ul{ display:block;}
+.all>ul>li>span{background:#E6EBEF;width: 100%; height: 36px; display: inline-block; padding-left: 32px; line-height: 35px;}
+.all ul .current ul{ display:none; }
+.all>ul ul li{  border-bottom: 1px solid #F9F9F9; height: 47px; line-height: 47px; overflow: hidden; position: relative;}
+.all>ul ul li>a{width: 100%; display: block;padding-left: 55px; color:#BEBEBE; text-decoration: none;}
+.all>ul ul li>a:hover{color:#0085d0; }
+.all ul .current{border-bottom: 1px solid #fff;}
+.all ul .current:last-child{border-bottom:0;}
+.t-ul>li>a:hover{text-decoration: none;}
+
+
+.p-fontcolor{color:#000;} 
+.p-liactive2>a{color:#0085d0 !important;}
+.p-mymember1{position: absolute;right:25px;top:50%; margin-top: -10px;}
+.p-badge{color:red; visibility: hidden;}
+ul,ul>li{padding: 0 ;margin: 0 ; list-style:none;}
+.p-active>a{color:#0085d0 !important;background:url(../img/nav1.png)no-repeat center bottom;}
+.p-width100{width: 100%;}
+.p-btn{ width: 120px; height: 36px;border-radius: 3px; text-align: center;background: #0085d0;color: #fff !important;}
+.p-btn:hover{ background: #0085d0 !important;color: #fff !important; border-color:#0085d0 !important;}
+.p-marginTop4{margin-top: 75px; margin-bottom:54px;}
+.nav>li>a{padding:29px 0px; padding-left: 38px; padding-right: 38px;}
+.p-paddingLeft{padding-left: 3px;}
+.p-paddingLeft7{padding-left: 15px !important; float: right; cursor:pointer;}
+.nav>li:last-of-type>a{line-height: 34px;}
+.p-paddingLeft8{padding-left: 15px !important; float: right; cursor:pointer;}
+.p-por10{position: relative;left: 8px;}
+.p-fontcolor20{color:#0085d0;}
+
+
+
+
+
+
+@media screen and (min-width: 1601px) and (max-width: 1800px) {
+    // .nav>li>a{padding-left: 32px; padding-right: 32px;}
+
+
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+    // .nav>li>a{padding-left: 20px; padding-right: 20px;}
+    // .p-container{width: 80%;}
+
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    .p-mymember1{right:10px;}
+    // .nav>li>a{padding-left: 8px; padding-right: 8px;}
+    .all>ul ul li>a{padding-left: 34px;}
+    // .p-container{width: 80%; }
+
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    .p-mymember1{right:4px;}
+    .all>ul ul li>a{padding-left: 34px;}
+    // .nav>li>a{padding-left: 4px; padding-right: 4px;}
+    .nav>li:first-of-type>a{padding:29px 14px; }
+    .nav>li:first-of-type{margin-right: 18px; }
+    .p-container{width: 90%; }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .all>ul>li>span{padding-left: 10px;}
+    .p-mymember1{display: none;}
+    .all>ul ul li>a{padding-left: 34px;}
+    // .nav>li>a{padding-left: 1px; padding-right: 1px;}
+    .nav>li:first-of-type>a{padding:29px 10px; }
+    .nav>li:first-of-type{margin-right: 8px; }
+    .p-container{width: 90%; }
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .p-col-sm-2{width: 50%; }
+    .p-col-sm-10{width: 100%; margin-left: 0;}
+    .p-mymember1{right:25px;}
+    .p-container{width: 90%;}
+
+
+}

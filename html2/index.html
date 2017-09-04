@@ -1,0 +1,521 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <meta name="keywords" content="店装帮">
+  <meta name="description" content="店装帮，让店装更便捷" />
+  <meta name="baidu-site-verification" content="SL4MQKosaG">
+  <title>店装帮</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="css/jquery-alert.css">     -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">    
+  <link rel="stylesheet" type="text/css" href="style.css">    
+  <link rel="stylesheet" type="text/css" href="css/Payeng2.css"> 
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/custom.css" /> -->
+  <script src="js/modernizr.custom.17475.js"></script>
+  <script type="text/javascript" src="js/jquery1.10.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> 
+  <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+  </script> 
+  <style>
+    .carousel-example{width: 1200px;overflow: hidden;}
+    .p-right{left: 1150px;}
+  </style>  
+
+</head>
+
+<body>
+<!-- 头部 -->
+  <header class="p-header">     
+    <div class="container-fluid p-nopadding p-top p-container">
+        <span><a href="index.html"><img src="img/logo.png" alt="店装帮"></a><em>让店装更便捷</em></span>
+        <ul class="list-inline pull-right p-nopadding p-ul">
+            <li id="index_head"><a href="login.html">登录</a><a href="register.html">免费注册</a></li>
+            <li class="p-paddingLeft8" id="showsysout"></li>
+        </ul>            
+    </div>   
+  </header><!--end headr -->
+
+  <nav class="navbar navbar-default p-nomargin p-navbar">
+    <div class="container-fluid p-container p-nopadding">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse p-nopadding" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav p-width100">
+          <li class="dropdown p-background p-li">
+            <a href="#" class="dropdown-toggle p-fontcolor6 c-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/nav-icon.png" alt="" class="p-por3 c-navicon">全部导航<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">首页<span class="icon-navshouye pull-right p-iconBefore"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="seller-list.html">找需求<span class="icon-navchuangkezhongxin pull-right"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="stuff.html">找材料<span class="icon-navzhaocailiao pull-right"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="maker.html">创客中心<span class="icon-navchuangkezhongxin pull-right"></span></a></li>
+            </ul>
+          </li>
+          <li class="p-active"><a href="index.html">首页</a></li>
+          <li><a href="seller-list.html">找需求<img src="img/hothover.png" alt="" class="p-paddingLeft c-img"></a></li>
+          <li><a href="stuff.html">找材料</a></li>
+          <li><a href="maker.html">创客中心认证</a></li>
+          <li class="pull-right"><a href="supplier-task2.html" class="btn btn-primary p-btn">发需求</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav><!--end nav -->  
+
+    <!-- banner焦点图  -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/banner1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="img/banner2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="img/banner3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="img/banner4.jpg" alt="">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div><!-- end -->
+
+    <div class="p-container demo-3 p-nopadding p-margin23">
+      <ul class="p-floatLeft p-ulWidth">
+        <li class="h3 text-center p-fontcolor1 p-lineheight5">最新需求</li>
+        <li class="text-center p-height9 c-hover"><span class="p-arrow"></span></li>
+        <li class="p-height10">
+          <ul class="c-ul10" id="theNewOrder">
+            <!-- 最新需求循环开始 -->
+            
+			
+			<!-- 最新需求循环结束 -->
+			
+          </ul>
+        </li>
+        <li class="text-center p-height9 c-hover2"><span class="p-arrow p-arrow2"></span></li>
+      </ul>
+      <ul class="p-floatRight p-ulWidth2">
+        <li class="h3 text-center p-fontcolor1 p-lineheight5">已完成项目</li>
+        <li  class="p-height11">
+          <ul class="p-padding14 c-ul11" id="theCloseOrder">
+          	<!-- 已完成项目 循环开始 -->
+            
+			<!-- 已完成项目 循环结束 -->
+          </ul>
+        </li>
+      </ul>
+      <!-- End Elastislide Carousel -->
+    </div>
+
+  <div class="p-container p-margin7 text-center">
+    <h3 class="p-marginBottom9">服务流程</h3>
+    <ul class="list-inline p-border4 p-noanything p-ul9 c-ul9">
+      <li class="p-activeLi"><span><img src="img/index-icon1.png" alt=""><br><p class="p-paddingTop p-textnowarp"><span class="p-borderRadius3">1</span>发布任务</p></span></li>
+      <li><span><img src="img/index-icon02.png" alt=""><br><p class="p-paddingTop p-textnowarp"><span class="p-borderRadius3">2</span>审核</p></span></li>
+      <li><span><img src="img/index-icon03.png" alt=""><br><p class="p-paddingTop p-textnowarp"><span class="p-borderRadius3">3</span>匹配服务商</p></span></li>
+      <li><span><img src="img/index-icon04.png" alt=""><br><p class="p-paddingTop p-textnowarp"><span class="p-borderRadius3">4</span>项目执行</p></span></li>
+      <li><span><img src="img/index-icon05.png" alt=""><br><p class="p-paddingTop p-textnowarp"><span class="p-borderRadius3">5</span>验收</p></span></li>
+      <li><span><img src="img/index-icon06.png" alt=""><br><p class="p-paddingTop p-textnowarp"><span class="p-borderRadius3">6</span>结算</p></span></li>
+    </ul>
+    <div class="clearfix"></div>
+    <div class="p-textarea2"><img src="img/textarea.jpg" alt="" class="img-responsive"></div>
+    <div class="clearfix"></div>
+<!--     <h3 class="p-margin15">一步到位</h3>
+    <ul class="list-inline col-md-12 p-padding6 p-ul8">
+      <li class="col-md-4 col-sm-6 p-padding7">
+        <span class="p-border5">
+          <p>一键估价</p>
+          <p class="p-fontstyle8">输入相对应的参数及材质要求，即可实现3D渲染效果并完成bom清单生成</p>
+        </span>
+      </li>
+      <li class="col-md-4 col-sm-6 p-padding7 text-center">
+        <span class="p-border6">
+          <p>一键打样</p>
+          <p class="p-fontstyle8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在线即时发起打样招标，7天完成打样及配送 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </span>
+      </li>
+      <li class="col-md-4 col-sm-6 p-padding7">
+        <span class="p-border5">
+          <p>一键匹配</p>
+          <p class="p-fontstyle8">输入相对应的参数及材质要求，即可实现3D渲染效果并完成bom清单生成</p>
+        </span>
+      </li>
+    </ul>   -->
+  </div><!-- end -->
+
+  <div class="p-container p-margin16">
+  <h3 class="text-center p-marginBottom5 p-paddingBottom5 p-borderBottom4">案例<br><span class="p-fontcolor2 h4">project case</span></h3>
+  <div class="p-container5 p-margin7">
+    <div class="p-width1200">
+    <div class="carousel-example p-por">  
+      <!-- 优质案例 -->
+      <div class="p-width5">
+        <ul class="p-width999 p-ul15 p-ul16" id="loadImg">
+        
+        </ul>
+      </div>
+      <!-- 优质案例 end-->
+      <a class="carousel-control" href="#simple-content-carousel" role="button" data-slide="prev">
+        <span class="p-Previous p-height8" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control p-right" href="#simple-content-carousel" role="button" data-slide="next">
+        <span class="p-Next p-height8" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>        
+  </div>
+  </div>
+  
+  <div class="container-fluid footer" id="footer1">
+  </div><!--end footer -->
+
+
+</body>
+<script type="text/javascript" src="js/Payeng2.js"></script>
+<script type="text/javascript">
+$(function() {
+	var str = "";
+    $.getJSON("/DZBang_entrance/userexamplie/getExampleList.do", function(data){
+    	console.log(data);
+    	  $.each(data.data, function(i,item){
+
+	    		  str += '<li>';
+	    		  str += '    <a href="javascript:;" class="p-tdn">';
+	    		  str += '      <img src="/DZBang_entrance/imgload.do?filePath='+ item.filepath +'" alt="" height="222" width="232" >';
+	    		  str += '      <p class="p-margin22 p-fontcolor text-center h5">';
+	    		  str += '        <img src="img/cooperation-icon.png" alt="">';
+	    		  str += '        <span class="p-paddingLeft9">'+ item.name +'</span>';
+	    		  str += '      </p>';
+	    		  str += '    </a>';
+	    		  str += '</li>';
+    	  });
+    	//插入数据
+    	$("#loadImg").html(str);
+    	lunbo();
+    	});
+    
+    $.getJSON("/DZBang_entrance/happuser/getloginUser.do", function(data){
+  		  if("" != data.name && null != data.name){
+  			$("#index_head").html('<a href="user-information.html" class="p-borderColor">'+data.nickname+'</a><a href="user-notice.html"><span class="p-fontcolor20">消息</span></a>');
+  			$("#showsysout").html("<a onclick='sysloginout();' >退出</a>");
+  		  }else{
+  		  }
+  	});
+})
+
+	function sysloginout(){
+	  window.wxc.xcConfirm("请确认是否注销？",window.wxc.xcConfirm.typeEnum.confirm,
+	            {onOk: function(){
+	            	$.ajax({
+	          	      url: '/DZBang_entrance/syslogout.do',
+	          	      type: 'post',
+	          	        dataType: 'json',
+	          	      cache: false,
+	          	      'success': function(data){
+			            	window.wxc.xcConfirm("注销成功",window.wxc.xcConfirm.typeEnum.success,
+			                        {onClose: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }},
+			                        {onOk: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }}); 
+	          	      },
+	          	      'error':function(data){
+	          	        window.wxc.xcConfirm("注销失败",window.wxc.xcConfirm.typeEnum.error);
+	          	      }
+	          	    });
+	            	
+	            }});
+	}
+
+
+$(function() {
+		//循环生成优质任务
+		/*
+		$.ajax({
+			url : '/DZBang_entrance/orderinfo/queryTheBetterOrderList.do',
+			type : 'post',
+			dataType : 'json',
+			cache : false,
+			'success' : function(data) {
+				var str = "";
+				$.each(data, function(i, item) {
+					
+					str = str + ' <li class="p-pddingBottom">';
+					str = str + '  <div class="img p-background1 p-boxshow">';
+					str = str + '    <a href="javascript:openorderdata('+i+');" class="p-hover p-por p-overflow p-nopadding"> ';
+					str = str + '    <input type="hidden" id='+i+' name='+i+' value="'+item.order_no+'" />';
+					str = str + '    	<img src="img/'+item.order_type+'.png" alt="" width="100%">';
+					str = str + '    	<span class="p-mask p-fontcolor4"><p class="small">'+item.order_remark+'</p></span>';
+					str = str + '    </a>';
+					str = str + '    <p class="p-borderBottom3 p-padding05 p-textnowarp">'+item.order_name+'<br> ';
+					str = str + '    	<span class="p-fontcolor4 p-fontsize3">¥</span><span class="p-fontcolorblue p-marginTop4">'+item.order_money+'</span></p>';
+					str = str + '    <p class="p-margin05 p-lineheight3 p-por p-fontsize">';
+					str = str + '      	<span>开工日期：'+item.begin_date_str+'</span> <span class="p-border8 pull-right">待选中</span>';
+					str = str + '    </p>';
+					str = str + '  </div>';
+					str = str + '</li>';
+					
+				});
+				$("#carousel").html(str);
+			},
+			'error' : function(data) {
+				window.wxc.xcConfirm("查询失败",
+						window.wxc.xcConfirm.typeEnum.error);
+			}
+	
+		});
+		*/
+		
+		//循环生成最新任务
+		$.ajax({
+			url : '/DZBang_entrance/orderinfo/queryOrderListToCdate.do',
+			type : 'post',
+			dataType : 'json',
+			cache : false,
+			'success' : function(data) {
+				var str = "";
+				$.each(data, function(i, item) {
+					str = str + '<li class="p-background1 p-padding12">';
+					str = str + '  <p class="p-fontsize2">';
+					str = str + '    <span class="p-paddingLeft10"><span class="p-strong">'+item.order_type_str+'/</span><span class="p-brand">'+item.order_name+'</span></span>';
+					str = str + '    <span class="p-fontcolor9 p-fontsize6 pull-right p-paddingRight2">¥ '+item.order_money+'</span>';
+					str = str + '  </p>';
+					str = str + '  <p class="p-fontsize">';
+					str = str + '    <span class="p-paddingLeft10">招标截止日期</span>';
+					str = str + '    <span class="p-marginLeft6 p-fontcolor2">'+item.begin_date_str+'</span>';
+					str = str + '  </p>';
+					str = str + '  <hr class="p-hr2">';
+					str = str + '</li>';
+					
+				});
+				$("#theNewOrder").html(str);
+				culin();
+			},
+			'error' : function(data) {
+				
+			}
+	
+		});
+		
+		//循环生成完成项目
+		$.ajax({
+			url : '/DZBang_entrance/orderinfo/queryCloseOrderList.do',
+			type : 'post',
+			dataType : 'json',
+			cache : false,
+			'success' : function(data) {
+				var str = "";
+				$.each(data, function(i, item) {
+					str = str + '<li class="p-background1 p-padding13 ">';
+					str = str + '  <span>';
+					str = str + '    <span class="p-textnowarp3">'+item.order_name+'</span>，获利<span class="p-fontcolor9"> '+item.money+'元</span>';
+					str = str + '  </span>';
+					str = str + '  <span class="pull-right p-por10"><img src="img/adree.jpg" alt="" style="margin-right:8px;">'+item.area+'</span>';
+					str = str + '</li>';
+				});
+				$("#theCloseOrder").html(str);
+				culend();
+			},
+			'error' : function(data) {
+
+			}
+	
+		});
+	});
+	
+	//查询工单明细
+	function openorderdata(inputid){
+		var orderno = $("#"+inputid).val();
+		alert(orderno);
+	}
+</script>
+
+<script>
+//遍历
+  // $(function(){ 
+  //   $('.all .p-fontcolor').click(function(e) {
+  //         $(this).parent().toggleClass('current').siblings().addClass('current');
+  //     });
+  // }); 
+  var attr1 = ['textarea.jpg','textarea4.jpg','textarea3.jpg','textarea5.jpg','textarea6.jpg','textarea2.jpg']
+  $(".c-ul9>li").mouseover(function(event) {
+    var index = $(this).index()+1;
+    $(this).addClass('p-activeLi').siblings().removeClass('p-activeLi');
+    $('.c-ul9>li').each(function(index, element) {
+          var huode = index+1;
+      $(element).children().children('img').attr({src: 'img/index-icon0'+huode+'.png'});
+      });
+    $(this).children().children('img').attr({src: 'img/index-icon'+index+'.png'});
+    $('.p-textarea2').children().attr('src', 'img/'+attr1[index-1]+'');
+  });
+
+
+</script>
+
+<script>
+// <!-- 案例固定式轮播 -->
+function lunbo(){
+  var num = 0;
+  var liLength = $(".p-ul15>li").length-4;
+  var timer = null;
+  //自动轮播及移入停止轮播
+  function go(){
+    timer=setInterval(function(){ 
+       num ++;
+       if ( num>liLength ) {
+        num=0;
+        $(".p-ul15").animate({'left': '0px'},500)
+       };    
+      $(".p-ul15").animate({'left': (-num*274)+'px'},500);
+    },2000);
+  };
+  go();
+  $(".p-ul15,.p-Previous,.p-Next").hover(function() {
+    clearInterval(timer)
+  }, function() {
+    go();
+  });
+  $(".p-Previous").click(function(event) {
+     num++;
+     if ( num>liLength ) {
+      num=0;
+      $(".p-ul15").animate({'left': '0px'},500);
+     };
+    $(".p-ul15").stop().animate({'left': (-num*274)+'px'},500);
+  });
+  $(".p-Next").click(function(event) {
+     num--;
+     if ( num<0 ) {
+      num=liLength;
+      $(".p-ul15").animate({'left': '0px'},500)
+     };
+    $(".p-ul15").stop().animate({'left': (-num*274)+'px'},500);
+  });
+
+ };
+
+
+// 最新需求轮播
+function culin(){
+  var num = 0;
+  var liLengthing = $(".c-ul10>li").length-4;
+  var timerss = null;
+  $(".c-hover , .c-hover2").hover(function() {
+    $(this).children('span').css({ borderColor: '#fdaf17'});
+    clearInterval(timerss);
+  }, function() {
+    $(this).children('span').css({ borderColor: '#C7C7C7'}); 
+    goo();      
+  });
+  $(".c-ul10").hover(function() {
+    clearInterval(timerss);
+  }, function() {
+    goo();      
+  });  
+  $(".c-ul10>li").hover(function() {
+    $(this).children('.p-fontsize2').children().children('.p-brand').css({color: '#fdaf17'});
+  }, function() {
+    $(this).children('.p-fontsize2').children().children('.p-brand').css({color: '#000'});    
+  });
+  // 点击切换轮播效果
+  $(".c-hover").click(function(event) {
+     num++;
+     if ( num>liLengthing ) {
+      num=0;
+      $(".c-ul10").animate({'top': '0px'},500);
+     };
+    $(".c-ul10").stop().animate({'top': (-num*77)+'px'},500);
+  });
+  $(".c-hover2").click(function(event) {
+     num--;
+     if ( num<0 ) {
+      num=liLengthing;
+      $(".c-ul10").animate({'top': '0px'},500)
+     };
+    $(".c-ul10").stop().animate({'top': (-num*77)+'px'},500);
+  });
+
+  function goo(){
+    timerss=setInterval(function(){ 
+       num ++;
+       if ( num>liLengthing ) {
+        num=0;
+        $(".c-ul10").animate({'top': '0px'},0)
+       };    
+      $(".c-ul10").animate({'top': (-num*77)+'px'},500);
+    },2000);
+  };
+  goo();
+
+};
+
+// 已完成项目轮播
+function culend(){
+  var num = 0;
+  var liLengthss = $(".c-ul11>li").length-8;
+  var timers = null;
+  $(".c-ul11").hover(function() {
+    clearInterval(timers);
+  }, function() {
+    gooo();  
+  });
+  function gooo(){
+    timers=setInterval(function(){ 
+       num ++;
+       if ( num>liLengthss ) {
+        num=0;
+        $(".c-ul11").animate({'top': '0px'},0)
+       };    
+      $(".c-ul11").animate({'top': (-num*45)+'px'},500);
+    },2000);
+  };
+  gooo();
+
+};
+
+
+</script>
+
+
+</html>

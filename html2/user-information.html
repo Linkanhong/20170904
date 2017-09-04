@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <meta name="keywords" content="店装帮">
+  <meta name="description" content="店装帮，让店装更便捷" />
+  <title>基本信息</title>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/Payeng.css">
+  <link rel="stylesheet" type="text/css" href="css/user.css">
+
+</head>
+<body class="p-user">
+  <header class="t-header">     
+    <div class="container-fluid p-nopadding t-top p-container">
+        <span><a href="index.html"><img src="img/logo.png" alt="店装帮"></a><em>让店装更便捷</em></span>
+        <ul class="list-inline pull-right p-nopadding t-ul">
+            <li id="index_head"><a href="login.html">登录</a><a href="register.html">免费注册</a></li>
+            <li class="p-paddingLeft8" id="showsysout"></li>
+        </ul>            
+    </div>   
+  </header><!--end headr -->
+
+  <nav class="navbar navbar-default t-nomargin t-navbar">
+    <div class="container-fluid p-container p-nopadding ">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse p-nopadding" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav t-width100">
+          <li class="dropdown t-background t-li">
+            <a href="#" class="dropdown-toggle t-fontcolor6 c-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/nav-icon.png" alt="" class="t-por3 c-navicon">全部导航<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">首页<span class="icon-navshouye pull-right p-iconBefore"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="seller-list.html">找需求<span class="icon-navchuangkezhongxin pull-right p-iconBefore"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="stuff.html">找材料<span class="icon-navzhaocailiao pull-right p-iconBefore"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="maker.html">创客中心<span class="icon-navchuangkezhongxin pull-right p-iconBefore"></span></a></li>
+            </ul>
+          </li>
+          <li class="p-active"><a href="user-information.html">账户设置</a></li>
+          <li><a href="user-order.html">项目管理</a></li>
+          <li><a href="user-notice.html">消息中心</a></li>
+          <li></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav><!--end nav -->  
+
+  <div class="p-container clearfix p-marginTop">
+    <div class="col-sm-2 p-col-sm-2 all p-nopadding">
+      <ul>
+          <li>
+                <span class="p-fontcolor"><span class="glyphicon glyphicon-play"></span>账户管理</span>
+                <ul>
+                  <li class="p-liactive2"><a href="user-information.html">基本信息<img src="img/member-icon5.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="user-authentication.html">身份认证<img src="img/member-icon6.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="user-security.html">安全级别<img src="img/member-icon7.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="user-modify-password.html">修改密码<img src="img/member-icon8.png" alt="" class="p-mymember1"></a></li>
+                </ul>
+          </li>
+          <li class="current">
+                <span class="p-fontcolor"><span class="glyphicon glyphicon-play"></span>项目管理</span>
+                <ul>
+                  <li><a href="user-order.html">我的订单<img src="img/member-icon3.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="user-collection.html">我的收藏<img src="img/member-icon4.png" alt="" class="p-mymember1"></a></li>
+                </ul>
+          </li>
+<!--           <li class="current">
+                <span class="p-fontcolor"><span class="glyphicon glyphicon-play"></span>会员中心</span>
+                <ul>
+                  <li><a href="uese-myMember.html">我的会员<img src="img/member-icon1.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="uese-growUp.html">成长体系<img src="img/member-icon2.png" alt="" class="p-mymember1"></a></li>
+                </ul>
+          </li> -->
+          <li class="current">
+                <span class="p-fontcolor"><span class="glyphicon glyphicon-play"></span>通知<span class="p-badge"> (1)</span></span>
+                <ul>
+                  <li><a href="user-notice.html">系统通知<img src="img/member-icon9.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="user-service.html">服务通知<img src="img/member-icon10.png" alt="" class="p-mymember1"></a></li>
+                  <li><a href="user-transaction.html">交易通知<img src="img/member-icon11.png" alt="" class="p-mymember1"></a></li>
+                </ul>
+          </li>
+        </ul>    
+    </div>
+    <!--end left -->
+
+	<div class="col-sm-10 p-col-sm-10 p-background3 p-padding3 p-width2">
+		<form class="form-horizontal" id="userinfoFrom" >
+		  <div class="form-group form-bg">
+		    <label for="inputEmail3" class="col-sm-2 control-label">
+			    	<a href="javascript:;" class="p-a p-file">
+		    		<img src="img/head.jpg" alt="" class="task-img9" id="showIconImg">
+		    		<input type="file" name="iconPath" id="iconPath" class="p-file9" >
+		    		<input type="hidden" name="icon_img" id="icon_img" value="" >
+		    	</a>
+		    	<a href="javascript:void(0);" onclick="uploadIcon();" class="p-a">上传
+		    	</a>
+		    </label>
+		    <div class="col-sm-10  p-paddingTop p2-paddingLeft" id="checkstatustr">
+		      <p>用户名：<span class="p-fontcolor8" id="loginid"></span></p>
+		      <p>等级：<span class="p2-marginLeft"><img src="img/supplier-green.png" alt="" width="16px"></span></p>
+		    </div>
+		  </div>
+			<ul class="p-bdb p-paddb list-inline">
+				<li class="p-h3 p2-margin">基本信息</li>
+				<li class="p2-margin p-danger">注：完善基本信息方可申请身份认证</li>
+			</ul>
+			<p class="p-bebebe">标有星号（<span class="p-danger">*</span> )的栏目为必填栏目</p>
+
+<!-- 		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-2 control-label">用户名 ：</label>
+		    <div class="col-sm-10">
+			    <p class="p-paddingTop1" id="loginid"></p>
+		    </div>
+		  </div> -->
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10 p2-padding2">
+				<div class="radio-inline">
+				  <label>
+				    <input type="radio" name="user_type" id="user_type_1" value="1" checked class="p-radio1">
+				    个人
+				  </label>
+				</div>
+				<div class="radio-inline p-marginLeft3">
+				  <label>
+				    <input type="radio" name="user_type" id="user_type_2" value="2" class="p-radio2">
+				    企业
+				  </label>
+				</div>
+		    </div>
+		  </div>		  
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-2 control-label p2-paddingLeft2">昵称 ：</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control p-input" placeholder="昵称" id="nickname" name="nickname" maxlength="20">
+		      <sub class="p-danger p-visibility">名称含有非法字符</sub>
+		    </div>
+		  </div>		  
+		  <div class="form-group">
+		  	<div id="showname">
+		    	<label for="inputPassword3" class="col-sm-2 control-label"><span class="p-red p-marginRight p-paddingTop1">*</span>姓名 ：</label>
+		    </div>
+		    <div class="col-sm-10">
+		      <input type="text" id="name" name="name" class="form-control p-input" placeholder="请勿超过10字" maxlength="10">
+		      <sub class="p-danger p-visibility">名称含有非法字符</sub>
+		    </div>
+		  </div>	
+		  <div class="form-group">
+		  	<div id="">
+		    	<label for="inputPassword3" class="col-sm-2 control-label"><span class="p-red p-marginRight p-paddingTop1">*</span>手机号码 ：</label>
+		    </div>
+		    <div class="col-sm-7">
+		      <input type="tel" id="s_phone" name="s_phone" class="form-control p-input" placeholder="" maxlength="11">
+		      <sub class="p-danger p2-sub">手机号码格式有误</sub>
+		    </div>
+		    <div class="col-sm-3">
+		      <p class="p-paddingTop1 pull-right"><img src="img/icon-replace.png" alt=""><input type="button" class="p-primary2 p2-marginLeft2 p2-change" value="更换"></input></p>
+		    </div>		    
+		  </div>	
+		  <!-- 手机验证码		   -->
+		  <div class="form-group p2-marginB p2-changePhone">
+		  	<div id="">
+		    	<label for="inputPassword3" class="col-sm-2 control-label"></label>
+		    </div>
+		    <div class="col-sm-7">
+		      <input type="tel" class="form-control p-input2" id="smsCode" name="smsCode" placeholder="验证码" maxlength="6"
+			    onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" />
+			    <a href="javascript:void(0)" onclick="phoneSMS();" class="send p-send form-control-feedback p-form-feedback p-poaR">获取验证码</a>	
+			    <sub class="p-danger p2-sub2">验证码</sub>	      
+		    </div>
+		    <div class="col-sm-3">
+		      <p class="p-paddingTop1 pull-right"><input type="button" class="p-primary2 p2-marginLeft3 p2-change4" value="确定" onclick="savephone();" ></input></p>
+		    </div>			    	    
+		  </div>	
+		  <div class="form-group p2-ovh">
+		  	<div id="">
+		    	<label for="inputPassword3" class="col-sm-2 control-label"><span class="p-red p-marginRight p-paddingTop1">*</span>邮箱 ：</label>
+		    </div>
+		    <div class="col-sm-7">
+		      <input type="tel" id="s_email" name="s_email" class="form-control p-input" maxlength="32">
+		      <sub class="p-danger p2-sub3">邮箱格式有误</sub>
+		    </div>
+		    <div class="col-sm-3">
+		      <p class="p-paddingTop1 pull-right"><img src="img/icon-replace.png" alt=""><input type="button" class="p-primary2 p2-marginLeft2 p2-change2" value="更换"></input></p>
+		    </div>			    
+		  </div>
+		  <!-- 邮箱验证码 -->
+		  <div class="form-group p2-marginB p2-changeEmail p2-ovh">
+		  	<div id="">
+		    	<label for="inputPassword3" class="col-sm-2 control-label"></label>
+		    </div>
+		    <div class="col-sm-7">
+		      <input type="tel" class="form-control" id="mailCode" name="mailCode" placeholder="验证码" maxlength="6"
+			    onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" />
+			    <a href="javascript:void(0)" onclick="emailSMS();" class="send p-send2 form-control-feedback p-form-feedback p-poaR">获取验证码</a>	
+			    <sub class="p-danger p2-sub2">验证码</sub>	      
+		    </div>
+		    <div class="col-sm-3">
+		      <p class="p-paddingTop1 pull-right"><input type="button" class="p-primary2 p2-marginLeft3 p2-change3" value="确定" onclick="savemail();" ></input></p>
+		    </div>			    	    
+		  </div>
+		  <div class="clearfix"></div>
+
+		  <div class="form-group p2-margin2">
+		    <label for="inputPassword3" class="col-sm-2 control-label"><span class="p-red p-marginRight p-paddingTop1">*</span>服务技能 ：</label>
+		    <div class="col-sm-10 p-input">
+		    
+				<label class="checkbox-inline">
+				  <input type="checkbox" id="taskcode_SIdesign" name="skills_check" value="taskcode.SIdesign"  checked> SI设计
+				</label>
+				<label class="checkbox-inline">
+				  <input type="checkbox" id="taskcode_proofing" name="skills_check" value="taskcode.proofing" > 打样
+				</label>
+				<label class="checkbox-inline">
+				  <input type="checkbox" id="taskcode_process" name="skills_check" value="taskcode.process" > 加工
+				</label>
+				<label class="checkbox-inline">
+				  <input type="checkbox" id="taskcode_measure" name="skills_check" value="taskcode.measure" > 测量
+				</label>
+				<label class="checkbox-inline">
+				  <input type="checkbox" id="taskcode_setup" name="skills_check" value="taskcode.setup" > 道具安装
+				</label>
+				<label class="checkbox-inline">
+				  <input type="checkbox" id="taskcode_aftermarket" name="skills_check" value="taskcode.aftermarket"> 售后
+				</label>
+				<label class="checkbox-inline">
+				  <input type="checkbox" id="taskcode_shopoutfit" name="skills_check" value="taskcode.shopoutfit"> 店装
+				</label>
+				
+				<input type="hidden" id="skills" name="skills" value="" >
+		    </div>
+		  </div>	
+		  <div class="form-group p2-marginB5">
+		  	<div id="showremark">
+		    	<label for="inputPassword3" class="col-sm-2 control-label p-nowrap"><span class="p-red p-marginRight p-paddingTop1">*</span>服务介绍 ：</label>
+		    </div>
+		    <div class="col-sm-10">
+			    <textarea id="remark" name="remark" cols="30" rows="7" class="form-control p-input" maxlength="100" placeholder="业务介绍，请勿超过100字"></textarea>
+		    </div>
+		  </div>
+		  
+		  <div class="form-group p2-marginB5">
+		    <label for="inputPassword3" class="col-sm-2 control-label p-nowrap"><span class="p-red p-marginRight p-paddingTop1">*</span>所在地 ：</label>
+		    <div class="col-sm-10">
+			    <select class="col-sm-5 p-option p-input" id="area" name="area" onchange="selectCity();" >
+                    <option>-请选择-</option>
+                </select>
+			    <select class="col-sm-5 p-option p-input pull-right" id="city" name="city" >
+                    <option>-请选择-</option>
+                </select>
+		    </div>
+		  </div>
+		  <div class="form-group p2-marginB2">
+		    <label for="inputPassword3" class="col-sm-2 control-label p-nowrap"><span class="p-red p-marginRight p-paddingTop1">*</span>详细地址 ：</label> 
+		    <div class="col-sm-10">
+			    <input type="text" class="form-control p-input" placeholder="" id="address" name="address" >
+			    <sub class="p-fontcolor6 p2-fontsize3">填写详细地址，可以让用户快速通过地理位罝找到你</sub>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <input type="text" class="btn btn-primary p2-judge" value="更新"  ></input>
+		    </div>
+		  </div>
+		</form>
+
+	</div>
+</div>
+<div class="clearfix"></div><!-- /end -->
+
+
+<div class="container-fluid footer" id="footer1">
+</div><!-- /footer -->
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Payeng.js"></script>
+
+<script>
+	//区域下拉框
+	$.ajax({
+		url: '/DZBang_entrance/orderinfo/selectAreaList.do',
+		type: 'post',
+    	data: {parent_code:0},
+    	dataType: 'json',
+		cache: false,
+		'success': function(data){
+			var str = "";
+			str = str + "<option value=''>-请选择-</option>";
+			  $.each(data, function(i,item){
+			  			str = str + "<option value='"+item.code+"'>"+item.name+"</option>";
+			  	  });
+					
+			  $("#area").html(str);
+		},
+		'error':function(data){
+		}
+	});
+	//获得登录用户信息
+	$.getJSON("/DZBang_entrance/happuser/getloginUser.do", function(data){
+		//$("#checkstatustr").html(data.nickname);
+		$("#loginid").html(data.name);
+		
+		$.getJSON("/DZBang_entrance/userinfo/getLoginUserinfo.do", function(data){
+			//单选按钮 js默认选中
+			if(data.user_type == "1"){
+				$("input[type='radio'][name=user_type][value='1']").attr("checked",true);
+			}
+			if(data.user_type == "2"){
+				$("input[type='radio'][name=user_type][value='2']").attr("checked",true);
+				
+			}
+			
+			radioclick(data.user_type);
+			
+			$("#nickname").val(data.nickname);
+			$("#name").val(data.name);
+			$("#remark").val(data.remark);
+			$("#address").val(data.address);
+			$("#icon_img").val(data.icon_img);
+			
+			
+			$("#s_email").val(data.email);
+			$("#s_phone").val(data.phone);
+			
+			$("#area").val(data.area);
+			selectCity(data.city);
+			//$("#city").val(data.city);//失效
+
+			if(data.icon_img != "" && data.icon_img != null){
+				$("#showIconImg").attr("src","/DZBang_entrance/imgload.do?filePath=" + data.icon_img);
+			}
+			
+			var skill_checks = data.skills.split(",");
+			for(var i=0; i<skill_checks.length; i++){
+				var str= skill_checks[i] ;
+				str = str.replace(".","_");
+				console.log(str);
+				$("#" + str).attr("checked",true);
+			}
+		});
+	});
+	
+	function chk(){ 
+		var obj=document.getElementsByName('skills_check'); //选择所有name="'test'"的对象，返回数组 
+		//取到对象数组后，我们来循环检测它是不是被选中 
+		var s=''; 
+		for(var i=0; i<obj.length; i++){ 
+		if(obj[i].checked) s+=obj[i].value+','; //如果选中，将value添加到变量s中 
+		} 
+		//那么现在来检测s的值就知道选中的复选框的值了 
+		$("#skills").val(s);
+		}
+	
+
+	$.fn.serializeObject = function()  
+	{  
+	   var o = {};  
+	   var a = this.serializeArray();  
+	   $.each(a, function() {  
+	       if (o[this.name]) {  
+	           if (!o[this.name].push) {  
+	               o[this.name] = [o[this.name]];  
+	           }  
+	           o[this.name].push(this.value || '');  
+	       } else {  
+	           o[this.name] = this.value || '';  
+	       }  
+	   });  
+	   return o;  
+	};
+	
+	function selectCity(selectCity){
+		var code = $("#area").val();
+		if(code != ""){
+			$.ajax({
+				url: '/DZBang_entrance/orderinfo/selectAreaList.do',
+				type: 'post',
+		    	data: {parent_code:code},
+		    	dataType: 'json',
+				cache: false,
+				'success': function(data){
+					var str = "";
+					str = str + "<option value=''>-请选择-</option>";
+					  $.each(data, function(i,item){
+							  	if(item.code == selectCity){
+							  		str = str + "<option value='"+item.code+"' selected >"+item.name+"</option>";
+							  	}else{
+							  		str = str + "<option value='"+item.code+"'>"+item.name+"</option>";
+							  	}
+					  	  });
+							
+					  $("#city").html(str);
+				},
+				'error':function(data){
+					
+				}
+			});	
+		}
+	}
+	
+	
+	function modifyUserinfo(){
+		chk();
+		var userinfoFrom = $('#userinfoFrom').serializeObject();
+	    var data = userinfoFrom;
+	    
+	    window.wxc.xcConfirm("请确认填写信息正确，提交后信息修改需要提交审核",window.wxc.xcConfirm.typeEnum.confirm,
+				{onOk: function(){
+				    $.ajax({
+						url: '/DZBang_entrance/userinfo/editUserinfo.do',
+						type: 'post',
+				    	data: data,
+				    	dataType: 'json',
+						cache: false,
+						'success': function(data){
+							switch(data.result){
+								case "success":
+									window.wxc.xcConfirm("信息已提交成功",window.wxc.xcConfirm.typeEnum.success,
+											{onClose: function(){
+												window.location.href= "user-information.html" + "?flag="+Math.random();
+											}},
+											{onOk: function(){
+												window.location.href= "user-information.html" + "?flag="+Math.random();
+											}});
+									break;
+								case "ischeck":
+									window.wxc.xcConfirm("信息审核通过，已不能修改信息",window.wxc.xcConfirm.typeEnum.success,
+											{onClose: function(){
+												window.location.href= "user-information.html" + "?flag="+Math.random();
+											}},
+											{onOk: function(){
+												window.location.href= "user-information.html" + "?flag="+Math.random();
+											}});
+									break;
+								case "nologin":
+									window.wxc.xcConfirm("你还未登录，请登录",window.wxc.xcConfirm.typeEnum.error);
+									window.location.href= "login.html" + "?flag="+Math.random();
+									break;
+								default:
+									window.wxc.xcConfirm("你好，缺少参数，个人信息提交失败",window.wxc.xcConfirm.typeEnum.error);
+									break;
+							}
+							
+						},
+						'error':function(data){
+							window.wxc.xcConfirm("你好，个人信息提交失败",window.wxc.xcConfirm.typeEnum.error);
+						}
+					});	
+		}});
+	    
+	}
+	
+	//上传头像
+	function uploadIcon(){
+		var showText = "头像";
+		var formData = new FormData();
+	    formData.append("imgFile", document.getElementById("iconPath").files[0]);
+	    $.ajax({
+	        url: "/DZBang_entrance/userinfo/uploadUserinfoIcon.do",
+	        type: "POST",
+	        data: formData,
+	        /**
+	        *必须false才会自动加上正确的Content-Type
+	        */
+	        contentType: false,
+	        /**
+	        * 必须false才会避开jQuery对 formdata 的默认处理
+	        * XMLHttpRequest会对 formdata 进行正确的处理
+	        */
+	        processData: false,
+	        success: function (data) {
+	        	 
+	            if (data.result == "success") {
+	            	$("#icon_img").val(data.icon_img);
+	                window.wxc.xcConfirm(showText+"文件上传成功",window.wxc.xcConfirm.typeEnum.success);
+	            }
+	            if (data.result == "error") {
+	            	window.wxc.xcConfirm(showText+"文件上传失败",window.wxc.xcConfirm.typeEnum.error);
+	            }
+	            if (data.result == "tobig") {
+	            	window.wxc.xcConfirm(showText+"上传文件太大了",window.wxc.xcConfirm.typeEnum.error);
+	            }
+	            if (data.result == "isnull") {
+	            	window.wxc.xcConfirm(showText+"上传文件不能为空",window.wxc.xcConfirm.typeEnum.error);
+	            }
+	            if (data.result == "nologin") {
+	            	window.wxc.xcConfirm(showText+"请先登录系统才能上传文件",window.wxc.xcConfirm.typeEnum.error);
+	            }
+	        },
+	        error: function () {
+	            window.wxc.xcConfirm(showText+"上传失败",window.wxc.xcConfirm.typeEnum.error);
+	        }
+	    });
+	}
+</script>
+<script>
+
+	$('.p-radio1').click(function(event) {
+		$("#showname").html("<label for='inputPassword3' class='col-sm-2 control-label'><span class='p-red p-marginRight p-paddingTop1'>*</span>姓名 ：</label>");
+		$("#showremark").html("<label for='inputPassword3' class='col-sm-2 control-label p-nowrap'><span class='p-red p-marginRight p-paddingTop1'>*</span>服务介绍 ：</label>");
+	});
+	$('.p-radio2').click(function(event) {
+		$("#showname").html("<label for='inputPassword3' class='col-sm-2 control-label'><span class='p-red p-marginRight p-paddingTop1'>*</span>公司名称 ：</label>");
+		$("#showremark").html("<label for='inputPassword3' class='col-sm-2 control-label p-nowrap'><span class='p-red p-marginRight p-paddingTop1'>*</span>公司简介 ：</label>");
+	});
+	
+	function radioclick(checkvalue){
+		if(checkvalue == "1"){
+			$("#showname").html("<label for='inputPassword3' class='col-sm-2 control-label'><span class='p-red p-marginRight p-paddingTop1'>*</span>姓名 ：</label>");
+			$("#showremark").html("<label for='inputPassword3' class='col-sm-2 control-label p-nowrap'><span class='p-red p-marginRight p-paddingTop1'>*</span>服务介绍 ：</label>");
+		}
+		if(checkvalue == "2"){
+			$("#showname").html("<label for='inputPassword3' class='col-sm-2 control-label'><span class='p-red p-marginRight p-paddingTop1'>*</span>公司名称 ：</label>");
+			$("#showremark").html("<label for='inputPassword3' class='col-sm-2 control-label p-nowrap'><span class='p-red p-marginRight p-paddingTop1'>*</span>公司简介 ：</label>");
+		}
+	};
+
+	//短信验证码
+	function phoneSMS(){
+		var phone = $("#s_phone").val();
+		if(phone == ''){
+			window.wxc.xcConfirm("手机号码不能为空",window.wxc.xcConfirm.typeEnum.error);
+			return;
+		}else{
+			$.ajax({
+				url: '/DZBang_entrance/smsCode/phoneSMSCode.do',
+				type: 'post',
+		    	data: {phone:phone,tm:new Date().getTime()},
+		    	dataType: 'json',
+				cache: false,
+				'success': function(data){
+					if(data.result == "success"){
+						window.wxc.xcConfirm("短信发送成功",window.wxc.xcConfirm.typeEnum.success);
+					}else if(data.result == "error"){
+						window.wxc.xcConfirm("短信发送失败",window.wxc.xcConfirm.typeEnum.error);
+					}else{
+						window.wxc.xcConfirm("短信发送异常",window.wxc.xcConfirm.typeEnum.error);
+					}
+				},
+				'error':function(data){
+					window.wxc.xcConfirm("短信发送失效",window.wxc.xcConfirm.typeEnum.error);
+				}
+			});
+		}
+	}
+	
+	//邮箱验证码
+	function emailSMS(){
+		
+	}
+	
+	function judge(){
+		$(".p2-judge").click(function(event) {
+
+			var num = 0;
+			$('input[type="checkbox"]').each(function(index, el) {
+				if ( $(this).is(':checked')== true ) {
+					num ++;
+					return num;
+				}
+			});
+			if ($(".p-input:eq(0)").val() == '') {
+				 window.wxc.xcConfirm('请输入昵称',window.wxc.xcConfirm.typeEnum.confirm);
+			}else if( $(".p-input:eq(1)").val() == ''){
+				window.wxc.xcConfirm('请输入姓名/公司名称',window.wxc.xcConfirm.typeEnum.confirm);
+			}else if( $(".p-input:eq(2)").val() == ''){
+				window.wxc.xcConfirm('请输入手机号码',window.wxc.xcConfirm.typeEnum.confirm);
+			}else if( $(".p-input:eq(3)").val() == ''){
+				window.wxc.xcConfirm('请输入邮箱',window.wxc.xcConfirm.typeEnum.confirm);
+			}else if( $(".p-input:eq(4) input").is(':checked') == false){
+				window.wxc.xcConfirm('请选择一到三项服务技能',window.wxc.xcConfirm.typeEnum.confirm);
+			}else if( num==0 || num>3 ){
+				window.wxc.xcConfirm("服务技能只能选择一到三个",window.wxc.xcConfirm.typeEnum.confirm);
+			}else if( $(".p-input:eq(5)").val() == ''){
+				window.wxc.xcConfirm('请输入业务介绍',window.wxc.xcConfirm.typeEnum.confirm);
+			}else if( $(".p-input:eq(6)").val() == '请选择-'){
+				window.wxc.xcConfirm('请选择所在地的省份',window.wxc.xcConfirm.typeEnum.confirm);
+			}else if( $(".p-input:eq(7)").val() == '请选择-'){
+				window.wxc.xcConfirm('请选择所在地的市区',window.wxc.xcConfirm.typeEnum.confirm);
+			}else if( $(".p-input:eq(8)").val() == ''){
+				window.wxc.xcConfirm('请输入详细地址',window.wxc.xcConfirm.typeEnum.confirm);
+			}else{
+				modifyUserinfo();
+			};
+			
+		});
+
+		$(".p-input:eq(2)").blur(function(event) {	
+			var Pphone = $(".p-input:eq(2)").val();
+			if (Pphone == '') {
+				$(".p2-sub").css({color: 'red'}).html('手机号码不能为空');
+			}else if (!/^(\(\d{3,4}\)|\d{3,4}-|\s)?\d{7,14}$/.test(Pphone)) {
+				$(".p2-sub").css({color: 'red'}).html('手机号码格式不对');
+			}else if ( Pphone.length !==11 ) {
+				$(".p2-sub").css({color: 'red'}).html('手机号码格式不对');
+			}else {
+				$(".p2-sub").css({color: '#fff'});
+			};	
+		});
+
+		$(".p-input2").blur(function(event) {	
+			var Pcode = $(".p-input2").val();
+			if (Pcode == '') {
+				$(".p2-sub2").css({color: 'red'}).html('验证码不能为空');
+			}else if ( Pcode.length !==6 ) {
+				$(".p2-sub2").css({color: 'red'}).html('验证码格式不对');
+			}else {
+				$(".p2-sub2").css({color: '#fff'});
+			};	
+		});
+
+		$(".p-input:eq(3)").blur(function(event) {
+			
+			if($(".p-input:eq(3)").val()=="")
+			  {
+			   $(".p2-sub3").css({color: 'red'}).html('邮箱不能为空');
+			   return false;
+			  }
+			  var email=$(".p-input:eq(3)").val();
+			  if(!email.match(/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/))
+			  {
+			  	$(".p2-sub3").css({color: 'red'}).html('请输入正确的邮箱地址');
+			  }else{
+			  	$(".p2-sub3").css({color: '#fff'});
+			  }
+		});
+
+
+	};
+	judge();
+</script>
+<script>
+function savemail(){
+    var email = $('#s_email').val();
+    var mailCode = $('#mailCode').val();
+    
+    $.ajax({
+		url: '/DZBang_entrance/userinfo/editUserinfoEmail.do',
+		type: 'post',
+    	data: {email:email,mailCode:mailCode},
+    	dataType: 'json',
+		cache: false,
+		'success': function(data){
+			if("success" == data.result){
+				window.wxc.xcConfirm("绑定成功",window.wxc.xcConfirm.typeEnum.success);
+				p2change2();
+			}else if("errorcode" == data.result){
+				window.wxc.xcConfirm("验证码错误",window.wxc.xcConfirm.typeEnum.error);
+			}else{
+				window.wxc.xcConfirm("绑定失败",window.wxc.xcConfirm.typeEnum.error);
+			}
+		},
+		'error':function(data){
+			window.wxc.xcConfirm("绑定失败",window.wxc.xcConfirm.typeEnum.error);
+		}
+
+	});
+}
+
+function savephone(){
+    var phone = $('#s_phone').val();
+    var smsCode = $('#smsCode').val();
+    
+    $.ajax({
+		url: '/DZBang_entrance/userinfo/editUserinfoPhone.do',
+		type: 'post',
+    	data: {phone:phone,smsCode:smsCode},
+    	dataType: 'json',
+		cache: false,
+		'success': function(data){
+			if("success" == data.result){
+				window.wxc.xcConfirm("绑定成功",window.wxc.xcConfirm.typeEnum.success);
+				p2change2();
+			}else if("errorcode" == data.result){
+				window.wxc.xcConfirm("验证码错误",window.wxc.xcConfirm.typeEnum.error);
+			}else{
+				window.wxc.xcConfirm("绑定失败",window.wxc.xcConfirm.typeEnum.error);
+			}
+		},
+		'error':function(data){
+			window.wxc.xcConfirm("绑定失败",window.wxc.xcConfirm.typeEnum.error);
+		}
+	});
+}
+</script>
+<script>
+  $(function(){ 
+    $('.all .p-fontcolor').click(function(e) {
+          $(this).parent().toggleClass('current').siblings().addClass('current');
+      });
+  });  
+</script>
+<script>
+  $.getJSON("/DZBang_entrance/happuser/getloginUser.do", function(data){
+      if("" != data.name && null != data.name){
+    	  $("#index_head").html('<a href="user-information.html" class="p-borderColor">'+data.nickname+'</a><a href="user-notice.html"><span class="p-fontcolor20">消息</span></a>');
+      $("#showsysout").html("<a onclick='sysloginout();' >退出</ a>");
+
+      }else{
+    	  window.wxc.xcConfirm("你未登录，请先登录",window.wxc.xcConfirm.typeEnum.error,
+    	            {onClose: function(){
+    	              window.location.href= "login.html?flag="+Math.random();
+    	            }},
+    	            {onOk: function(){
+    	              window.location.href= "login.html?flag="+Math.random();
+    	            }});
+      }
+  });
+  function sysloginout(){
+	  window.wxc.xcConfirm("请确认是否注销？",window.wxc.xcConfirm.typeEnum.confirm,
+	            {onOk: function(){
+	            	$.ajax({
+	          	      url: '/DZBang_entrance/syslogout.do',
+	          	      type: 'post',
+	          	        dataType: 'json',
+	          	      cache: false,
+	          	      'success': function(data){
+			            	window.wxc.xcConfirm("注销成功",window.wxc.xcConfirm.typeEnum.success,
+			                        {onClose: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }},
+			                        {onOk: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }}); 
+	          	      },
+	          	      'error':function(data){
+	          	        window.wxc.xcConfirm("注销失败",window.wxc.xcConfirm.typeEnum.error);
+	          	      }
+	          	    });
+	            	
+	            }});
+	}
+</script>
+
+</body>
+</html>

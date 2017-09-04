@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <meta name="keywords" content="店装帮">
+  <meta name="description" content="店装帮，让店装更便捷" />
+  <title>任务信息</title>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="style.css">    
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/Payeng.css">
+
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<link href="datecss/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+	<script type="text/javascript" src="datejs/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="datejs/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+
+
+</head>
+<body>
+
+  <header class="t-header">     
+    <div class="container-fluid p-nopadding t-top p-container">
+        <span><a href="index.html"><img src="img/logo.png" alt="店装帮"></a><em>让店装更便捷</em></span>
+        <ul class="list-inline pull-right p-nopadding t-ul">
+            <li id="index_head"><a href="login.html">登录</a><a href="register.html">免费注册</a></li>
+            <li class="p-paddingLeft8" id="showsysout"></li>
+        </ul>            
+    </div>   
+  </header><!--end headr -->
+
+  <nav class="navbar navbar-default t-nomargin t-navbar">
+    <div class="container-fluid p-container p-nopadding ">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse p-nopadding" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav t-width100">
+          <li class="dropdown t-background t-li">
+            <a href="#" class="dropdown-toggle t-fontcolor6 c-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/nav-icon.png" alt="" class="t-por3 c-navicon">全部导航<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html">首页<span class="icon-navshouye pull-right p-iconBefore"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="seller-list.html">找需求<span class="icon-navchuangkezhongxin pull-right p-iconBefore"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="stuff.html">找材料<span class="icon-navzhaocailiao pull-right p-iconBefore"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="maker.html">创客中心<span class="icon-navchuangkezhongxin pull-right p-iconBefore"></span></a></li>
+            </ul>
+          </li>
+          <li class="p-active"><a href="index.html">首页</a></li>
+          <li><a href="seller-list.html">找需求<img src="img/hothover.png" alt="" class="t-paddingLeft c-img"></a></li>
+          <li><a href="stuff.html">找材料</a></li>
+          <li><a href="maker.html">创客中心认证</a></li>
+          <li class="pull-right"></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav><!--end nav -->  
+
+<div class="container-fluid col-md-8 col-md-offset-2 text-center">
+	<ul class="col-xs-12 p-nowrap p-fons1">
+		<li class="col-xs-2 p-nocolor p-overFlow"><span class="glyphicon glyphicon-list-alt p-fontcolor2"></span><br> 填写任务信息</li>
+		<li class="col-xs-2 p-overFlow"><span class="glyphicon glyphicon-search"></span><br> 任务审核、验证</li>
+		<li class="col-xs-2 p-overFlow"><span class="glyphicon glyphicon-user"></span><br> 匹配供应方</li>
+		<li class="col-xs-2 p-overFlow"><span class="glyphicon glyphicon-cog"></span><br> 供应方工作</li>
+		<li class="col-xs-2 p-overFlow"><span class="glyphicon glyphicon-ok"></span><br> 验收并付款</li>
+		<li class="col-xs-2 p-overFlow"><span class="glyphicon glyphicon-th-large"></span><br> 售后</li>
+		<li class="col-xs-10 col-xs-offset-1 p-hr2"></li>
+	</ul>
+	<div class="clearfix"></div>
+</div><!-- /menu -->
+<div class="clearfix"></div>
+<hr class="p-border1 col-md-8 col-md-offset-2 p-marb p-nop">
+
+<div class="container-fluid col-md-10 col-md-offset-1 p-marb3 text-center">
+	<h4 class="p-marb3">任务标题</h4>
+	<form  class="col-md-6 col-md-offset-3" id="orderFrom">
+		<input type="hidden" id="id" name="id" value=""></input>
+		<input type="hidden" id="order_no" name="order_no" value=""></input>
+		
+		<input type="hidden" id="cdate" name="cdate" value=""></input>
+		<input type="hidden" id="areacity" name="areacity" value=""></input>
+		
+		<div class="form-group col-md-12">
+		   <input type="text" name="order_name" id="order_name" value="" placeholder="十个海倍的展柜" class="col-xs-12 p-padd2" maxlength="20" disabled="disabled">
+		    <div class="clearfix"></div>
+		    <p class="help-block p-inlineheight2 text-left p-padl2">标题请勿超过20个汉字</p>
+		</div>
+		<div class="clearfix"></div>
+
+		<h4 class="p-marb3">描述您的具体要求</h4>
+		<div class="form-group col-md-12 p-marb">
+		    <label for="exampleInputFile" class="sr-only">...</label>
+		    <textarea name="order_remark" id="order_remark" rows="10" class="col-xs-12 p-marb3" placeholder="尺寸等明细（15-500字以内）" maxlength="1000" minlength="30"></textarea>
+		    <div class="clearfix"></div>
+<!-- 		    <div class="p-img2">
+		    	<div class="task-img2 col-xs-3 p-nopadding"></div>
+		    </div> -->
+		<div class="clearfix p-marb3"></div>
+<!-- 		    <div class="col-sx-12 p-nth text-center">
+			    <a href="#" class="p-file p-btnwidth btn-primary col-xs-3 p-margin3">上传附件	
+			    	<input type="file" name="" placeholder="" class="p-file4">
+			    </a>
+		    </div>
+ -->		<div id="showattachmentdown">
+ 				<a href="javascript:void(0);" onclick="downpdffile();" class="p-file p-btnwidth col-xs-8 p-style p-pdfFile" id="downfile"></a>
+ 				<input type="hidden" id="attachmentid" name="attachmentid" value=""></input>
+		    </div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<hr class="p-border1 col-md-8 col-md-offset-2 p-marb p-nop">
+	<div class="clearfix"></div><!--  /end -->
+
+
+	<div class="container-fluid col-md-8 col-md-offset-2 p-marb3">
+		<div class="form-horizontal col-md-6 col-md-offset-3">
+			<div class="form-group">
+		    <label class="col-sm-4 control-label"><span class="p-red p-star">*</span>工程城市：</label>
+		    <div class="col-sm-6" id="areacityshow">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="col-sm-4 control-label"><span class="p-red p-star">*</span>详细地址：</label>
+		    <div class="col-sm-6">
+		      <input type="text" class="form-control" name="address" id="address" placeholder="" maxlength="200">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="col-sm-4 control-label"><span class="p-red p-star">*</span>开工日期：</label>
+		    <div class="col-sm-6">
+		      <input type="text" class="form-control form_date" name="begin_date" id="begin_date" placeholder="2017-07-05" disabled="disabled">
+			    <script type="text/javascript">	           
+		  			  $('.form_date').datetimepicker({
+		  		            language: 'zh-CN',
+		  		            format: 'yyyy-mm-dd',
+		  		            weekStart: 1,
+		  		            todayBtn: 1,
+		  		            autoclose: 1,
+		  		            todayHighlight: 1,
+		  		            startView: 2,
+		  		            minView: 2,
+		  		          	initialDate: new Date(),
+		  		            forceParse: 0
+		  		        });
+	           </script>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="col-sm-4 control-label"><span class="p-red p-star">*</span>完工日期：</label>
+		    <div class="col-sm-6">
+		      <input type="text" class="form-control form_date" name="end_date" id="end_date" placeholder="2017-07-20">
+			    <script type="text/javascript">	           
+		  			  $('.form_date').datetimepicker({
+		  		            language: 'zh-CN',
+		  		            format: 'yyyy-mm-dd',
+		  		            weekStart: 1,
+		  		            todayBtn: 1,
+		  		            autoclose: 1,
+		  		            todayHighlight: 1,
+		  		            startView: 2,
+		  		            minView: 2,
+		  		          	initialDate: new Date(),
+		  		            forceParse: 0
+		  		        });
+	           </script>
+		    </div>
+		  </div>
+		  <div class="form-group has-feedback p-marb">
+		    <label class="control-label col-sm-4"><span class="p-red p-star">*</span>任务金额：</label>
+		    <div class="col-sm-6">
+			    <input type="text" class="form-control" name="order_money" id="order_money" placeholder="多少" min="0" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}">
+			    <span class="form-control-feedback" >元</span>
+		    </div>
+		  </div>
+		  <div class="form-group has-feedback">
+		    <label class="control-label col-sm-4"><span class="p-red p-star">*</span>联系方式：</label>
+		    <div class="col-sm-6">
+			    <input type="text" class="form-control" disabled="disabled" id="link_phone" name="link_phone" placeholder="手机号码" maxlength="11" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" />
+		    </div>
+		  </div>
+		  <div class="form-group has-feedback">
+		    <label class="control-label col-sm-4 sr-only">邮箱</label>
+			<div class="radio col-sm-6 text-left">
+				<label id="showmail" >
+					11018322567@qq.com
+				</label>
+			</div>	    
+		  </div>
+		  <div class="form-group has-feedback">
+		    <label class="control-label col-sm-4 sr-only">其他邮箱</label>
+			<div class="radio col-sm-6 text-left">
+				<label>
+					<input type="radio" value="option1" class="p-radio">
+					使用其他邮箱
+				</label>
+			</div>	    
+		  </div>
+		  <div class="form-group has-feedback p-marb">
+		    <label class="control-label col-sm-4 sr-only">邮箱地址</label>
+		    <div class="col-sm-6">
+			    <input type="email" class="form-control p-radioEmail email"  placeholder="请输入邮箱地址" id="link_mail" name="link_mail">
+			    <sub class="p-red p-sub">邮箱格式不对</sub>
+		    </div>
+		  </div>
+		  <div class="form-group has-feedback p-input">
+		    <label class="control-label col-sm-4 sr-only"></label>
+			<div class="col-sm-6 text-left">
+			  <a onclick="modifyOrder();" class="p-file btn btn-primary">保存</a>
+			</div>	    
+		  </div>
+		</div>
+	</form><!-- /form -->
+</div>
+<div class="clearfix"></div><!-- /end -->
+
+<div class="container-fluid footer" id="footer1">
+</div><!-- /footer -->
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/Payeng.js"></script>
+<script>
+
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+
+$('#begin_date').datetimepicker('update', new Date());
+
+$.getJSON("/DZBang_entrance/userinfo/isHaveMail.do", function(data){
+	  if("" != data){
+		if(data.result == "success"){
+			if(data.email == "" || data.email == null){
+			}else{
+				$("#showmail").html(data.email);
+				
+			}
+		}
+		if(data.result == "failed"){
+			window.wxc.xcConfirm("查询出错",window.wxc.xcConfirm.typeEnum.error);
+		}
+		if(data.result == "nologin"){
+			window.wxc.xcConfirm("你好，你还未登录，请先登录",window.wxc.xcConfirm.typeEnum.error,
+					{onClose: function(){
+						window.location.href= "login.html?flag="+Math.random();
+					}},
+					{onOk: function(){
+						window.location.href= "login.html?flag="+Math.random();
+					}});
+		}
+	  }
+});
+$(function (){
+	//查询附件
+	$.ajax({
+		url: '/DZBang_entrance/orderinfo/queryAttachment.do',
+		type: 'post',
+		data: {order_no:GetQueryString("orderno")},
+		dataType: 'json',
+		cache: false,
+		'success': function(data){
+			console.log(data);
+			if(data != null && data != ""){
+				$("#downfile").html(data.before_name);
+				$("#attachmentid").val(data.id);
+			}else{
+				$("#showattachmentdown").css({display:'none'});
+			}
+			
+		},
+		'error':function(data){
+			$("#showattachmentdown").css({display:'none'});
+		}
+	});
+});
+</script>
+
+<script>
+	$.getJSON("/DZBang_entrance/happuser/getloginUser.do", function(data){
+		  if("" != data.nickname && null != data.nickname){
+			  $("#index_head").html('<a href="user-information.html" class="p-borderColor">'+data.nickname+'</a><a href="user-notice.html"><span class="p-fontcolor20">消息</span></a>');
+		      $("#showsysout").html("<a onclick='sysloginout();' >退出</ a>");
+			if(data.status == "1"){
+				var orderno = GetQueryString("orderno");
+				if(orderno != null && orderno != ""){
+					$.ajax({
+						url: '/DZBang_entrance/orderinfo/getuserinfoOrderbyorderno.do',
+						type: 'post',
+						data: {order_no:orderno},
+						dataType: 'json',
+						cache: false,
+						'success': function(data){
+							$("#order_no").val(data.order_no);
+							$("#order_name").val(data.order_name);
+							$("#order_remark").val(data.order_remark);
+							$("#address").val(data.address);
+							$("#order_money").val(data.order_money);
+							$("#begin_date").val(data.begin_date_str);
+							$("#end_date").val(data.end_date_str);
+							
+							$("#link_phone").val(data.link_phone);
+							$("#link_mail").val(data.link_mail);
+							
+							$("#areacityshow").html(data.area+data.city);
+							
+							$("#id").val(data.id);
+							
+							
+							$('#cdate').val(data.created_date_str);
+						    $('#areacity').val(data.area+data.city);
+							
+						},
+						'error':function(data){
+							window.wxc.xcConfirm("你好，订单查询失败",window.wxc.xcConfirm.typeEnum.error);
+						},
+	
+					});
+					
+				}
+			}
+			if(data.status == "2"){
+				window.wxc.xcConfirm("你好，你属于接任务方，请转至需求大厅",window.wxc.xcConfirm.typeEnum.error,
+						{onClose: function(){
+							window.location.href= "seller-list.html?flag="+Math.random();
+						}},
+						{onOk: function(){
+							window.location.href= "seller-list.html?flag="+Math.random();
+						}});
+				
+			}
+		  }else{
+			window.wxc.xcConfirm("你好，你还未登录，请先登录",window.wxc.xcConfirm.typeEnum.error,
+					{onClose: function(){
+						window.location.href= "login.html?flag="+Math.random();
+					}},
+					{onOk: function(){
+						window.location.href= "login.html?flag="+Math.random();
+					}});
+		};
+	});
+	
+</script>
+<script>
+$.fn.serializeObject = function()  
+{  
+   var o = {};  
+   var a = this.serializeArray();  
+   $.each(a, function() {  
+       if (o[this.name]) {  
+           if (!o[this.name].push) {  
+               o[this.name] = [o[this.name]];  
+           }  
+           o[this.name].push(this.value || '');  
+       } else {  
+           o[this.name] = this.value || '';  
+       }  
+   });  
+   return o;  
+};
+
+
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+
+//修改订单
+function modifyOrder(){
+    var orderFrom = $('#orderFrom').serializeObject();
+    var data = orderFrom;
+    var orderno = $('#order_no').val();
+    var cdate = $('#cdate').val();
+    var areacity = $('#areacity').val();
+    $.ajax({
+		url: '/DZBang_entrance/orderinfo/modifyUserinfoOrder.do',
+		type: 'post',
+    	data: data,
+    	dataType: 'json',
+		cache: false,
+		'success': function(data){
+			switch(data.result){
+				case "success":
+					 window.wxc.xcConfirm("你好，修改成功",window.wxc.xcConfirm.typeEnum.success,
+							{onClose: function(){
+								window.location.href= "supplier-taskaudit.html?orderno="+orderno+"&cdate="+cdate+"&addr="+encodeURI(encodeURI(areacity))+"&flag="+Math.random();
+							}},
+							{onOk: function(){
+								window.location.href= "supplier-taskaudit.html?orderno="+orderno+"&cdate="+cdate+"&addr="+encodeURI(encodeURI(areacity))+"&flag="+Math.random();
+							}});
+					  break;
+				case "nologin":
+					window.wxc.xcConfirm("你好，请先登录系统",window.wxc.xcConfirm.typeEnum.error); 
+				  	break;
+				case "nocredit":
+					window.wxc.xcConfirm("你好，你不是需求方",window.wxc.xcConfirm.typeEnum.error); 
+				  	break;
+				case "nodraft":
+					window.wxc.xcConfirm("工单不是草稿状态，已无法修改",window.wxc.xcConfirm.typeEnum.error); 
+				  	break;
+				default:
+					window.wxc.xcConfirm("你好，缺少参数，修改失败",window.wxc.xcConfirm.typeEnum.error);
+					break;
+			}
+			
+		},
+		'error':function(data){
+			window.wxc.xcConfirm("你好，任务提交失败",window.wxc.xcConfirm.typeEnum.error);
+		}
+	});
+}
+
+function downpdffile(){
+    var attachmentid = $("#attachmentid").val();
+    window.location.href='/DZBang_entrance/orderinfo/downPdfFile.do' + '?id=' + attachmentid;
+}
+
+</script>
+<script>
+
+function sysloginout(){
+	  window.wxc.xcConfirm("请确认是否注销？",window.wxc.xcConfirm.typeEnum.confirm,
+	            {onOk: function(){
+	            	$.ajax({
+	          	      url: '/DZBang_entrance/syslogout.do',
+	          	      type: 'post',
+	          	        dataType: 'json',
+	          	      cache: false,
+	          	      'success': function(data){
+			            	window.wxc.xcConfirm("注销成功",window.wxc.xcConfirm.typeEnum.success,
+			                        {onClose: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }},
+			                        {onOk: function(){
+			                          window.location.href= "login.html?flag="+Math.random();
+			                        }}); 
+	          	      },
+	          	      'error':function(data){
+	          	        window.wxc.xcConfirm("注销失败",window.wxc.xcConfirm.typeEnum.error);
+	          	      }
+	          	    });
+	            	
+	            }});
+	}
+</script>
+</body>
+</html>
