@@ -1,0 +1,1 @@
+module.exports = '这是第二个js文件';
