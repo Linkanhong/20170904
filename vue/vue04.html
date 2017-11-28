@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>vue04</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script src="js/vue.production.js"></script>
+</head>
+<body>
+<div id="app">
+	数目为：{{a}}
+	<input type="button" name="" value="增加" v-on:click="plus">
+</div>
+<script>
+let vm = new Vue({
+	el:"#app",
+	data:{
+		a:0
+	},
+	//自定义方法
+	methods:{
+		plus(){
+			return this.a++;
+		}
+	},
+	//观察,方法a()就是数据a,必须名字一样
+	watch:{
+		a(){
+			console.log('有变化了，最新值：')
+			console.log(this.a);
+		}
+	}
+});
+</script>
+</body>
+</html>

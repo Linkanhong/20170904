@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>vue08</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script src="js/vue.production.js"></script>
+</head>
+<body>
+<div id="app" v-text="msg"></div>
+<!-- <div id="app">{{msg}}</div> -->
+<!-- 和{{}}是一样的效果，但是为什么俩个不能一起用在同一个页面呢 -->
+<script>
+//v-text指令
+var vm = new Vue({
+	el: "#app",
+	data:{
+		msg:"v-text指令"
+	}
+
+	
+})
+
+</script>
+</body>
+</html>

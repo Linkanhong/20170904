@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>vue03</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script src="js/vue.production.js"></script>
+</head>
+<body>
+<div id="app">总合：{{sum}}</div>
+<script>
+let vm = new Vue({
+	el:"#app",
+	data:{
+		num1:1,
+		num2:6,
+		num3:4
+	},
+	//计算属性
+	computed:{
+		sum(){
+			return this.num1+this.num2+this.num3
+		}
+	}	
+});
+</script>
+</body>
+</html>

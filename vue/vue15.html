@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>vue15</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script src="js/vue.production.js"></script>
+</head>
+<body>
+<div id="app">
+	<input type="text" name="" v-model="msg">
+	<p>你输入:{{msg}}</p>
+</div>
+<script>
+//v-model指令
+let vm = new Vue({
+	el:"#app",
+	data:{
+		msg:''
+	}
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>vue05</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script src="js/vue.production.js"></script>
+</head>
+<body>
+<div id="app" v-html="name"></div>
+<script>
+//绑定纯html
+let vm = new Vue({
+	el: "#app",
+	data:{
+		name:"<strong>前端君，好好学习</strong>"
+	}
+
+	
+})
+</script>
+</body>
+</html>
