@@ -1,0 +1,51 @@
+/**index.wxss**/
+.R-iTop{
+	text-align: center;
+	margin: 0 auto 40rpx;
+	font-size: 28rpx;
+	color: #ababab;
+	padding: 0 4%;
+}
+.R-iTop image{
+	width: 80rpx;
+	height: 80rpx;
+	margin: 10rpx 0;
+}
+.R-fixed{
+	background: #19ac18;
+}
+.R-spacebetween{
+	width: 84%;
+	height: 150rpx;
+	background: #fff;
+	margin: 0 auto 20rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5%;
+	overflow: hidden;
+}
+.R-spacebetween>image{
+	width: 60rpx;
+	height: 60rpx;
+	display: block;
+}
+.R-footer{
+	width: 100%;
+	height: 150rpx;
+	border-top: 1px solid #e2e2e2;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.R-footer>.R-mine{
+	width: 94%;
+	height: 120rpx;
+	line-height: 120rpx;
+	color: #fff;
+	background: #1aad19;
+
+}

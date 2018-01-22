@@ -1,0 +1,7 @@
+<!--picture.wxml-->
+<view class="R-addpicture" bindtap="addPicture">
+	<image src="{{Rurl}}"></image>
+</view>
+<view class="R-footer">
+	<button type="button" class="R-mine">生成二维码</button>
+</view>

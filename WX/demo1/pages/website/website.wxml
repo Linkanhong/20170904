@@ -1,0 +1,8 @@
+<!--website.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">		
+	<view class="R-inputtext">
+			<textarea placeholder="http://"  maxlength="140" auto-focus class="R-textarea" />		
+	</view>
+	<button size="default" formType="submit" class="R-submit">生成二维码</button>
+</form>
+

@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="R-iTop">
+	<image src=" {{ imgUrl[0] }} "></image>
+	<view> {{ document }} </view>
+</view>
+<block>
+	<view  class="R-spacebetween" bindtap="RnavigateTo" wx:for="{{ texts }}" data-Rurl="{{Rurl}}" data-index="{{index}}">
+		<text>{{ item.name }}</text>	
+		<image src="{{ item.src }}"></image>	
+	</view>
+
+</block>
+<view class="R-footer">
+	<button type="button" class="R-mine">我的二维码</button>
+</view>

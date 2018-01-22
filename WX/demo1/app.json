@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/demo/demo",
+    "pages/index/index",
+    "pages/text/text",
+    "pages/website/website",
+    "pages/picture/picture",
+    
+    "pages/businessCar/businessCar"
+    ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f5f5f5",
+    "navigationBarTitleText": "疯子二维码生成器",
+    "navigationBarTextStyle":"black"
+  }
+}

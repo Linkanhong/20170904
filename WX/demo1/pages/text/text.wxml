@@ -1,0 +1,9 @@
+<!--text.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">		
+	<view class="R-inputtext">
+		<textarea placeholder="请输入文字内容"  maxlength="140" auto-focus class="R-textarea" />		
+		<text class="R-positionBottom"> {{ number }}/140 </text>
+	</view>
+	<button size="default" formType="submit" class="R-submit">生成二维码</button>
+</form>
+

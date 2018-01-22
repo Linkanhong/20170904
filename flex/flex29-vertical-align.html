@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>vertical-align</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<style>
+
+.father{
+	height: 200px;
+	padding: 100px 100px 0;
+	border: 1px solid #000;
+	background: pink;
+}
+.father-content{
+	background: #ccc;
+	text-decoration: underline;
+}
+
+.item{
+	width: 5px;
+	height: 5px;
+	background: #000;
+
+	display: inline-block;
+	vertical-align: text-bottom;
+
+}
+</style>
+
+</head>
+
+<body>
+
+	<div class="father">
+		<div class="item"></div>
+		<span class="father-content">父级内容</span>
+	</div>
+
+</body>
+
+</html>

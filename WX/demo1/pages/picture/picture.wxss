@@ -1,0 +1,31 @@
+/**picture.wxss**/
+
+.R-addpicture{
+	width: 94%;
+	height: 500rpx;
+	background: #fff;
+	margin: 0 auto;
+}
+.R-addpicture>image{
+	width: 100%;
+	height:100%;	
+}
+.R-footer{
+	width: 100%;
+	height: 150rpx;
+	border-top: 1px solid #e2e2e2;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.R-footer>.R-mine{
+	width: 94%;
+	height: 120rpx;
+	line-height: 120rpx;
+	color: #fff;
+	background: #1aad19;
+
+}

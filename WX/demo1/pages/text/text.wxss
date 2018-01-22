@@ -1,0 +1,27 @@
+/**text.wxss**/
+.R-inputtext{
+	width: 84%;
+	height: 600rpx;
+	background: #fff;
+	margin: 20rpx auto;
+	padding: 20rpx 5%;
+	position: relative;
+}
+.R-positionBottom{
+	position: absolute;
+	bottom: 20rpx;
+	right:20rpx;
+	color: #ababab;
+	font-size:26rpx;
+}
+.R-textarea{
+	color:#000;
+	width: 100%;
+}
+.R-submit{
+	width: 94%;
+	background: #1aad19;
+	border: 0;
+	color: #fff;
+
+}
